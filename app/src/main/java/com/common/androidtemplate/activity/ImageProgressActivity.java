@@ -8,12 +8,12 @@ import android.widget.Button;
 import com.android.volley.Request.DownloadProgressListener;
 import com.android.volley.toolbox.NetworkImageView;
 import com.common.androidtemplate.R;
-import com.common.androidtemplate.activity.base.BaseActivity;
+import com.common.androidtemplate.activity.base.BaseBackActivity;
 import com.common.androidtemplate.app.TEMApp;
 import com.common.androidtemplate.config.DebugConfig;
 import com.common.tools.widget.RoundProgressBar;
 
-public class ImageProgressActivity extends BaseActivity implements DownloadProgressListener{
+public class ImageProgressActivity extends BaseBackActivity implements DownloadProgressListener{
 	
 	public static final String imgUrl = "http://www.ewang.com/Files/adminfiles/linlu/2010041214470168920.jpg";
 	

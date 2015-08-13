@@ -8,7 +8,7 @@ import android.util.DisplayMetrics;
 import android.widget.TextView;
 
 import com.common.androidtemplate.R;
-import com.common.androidtemplate.activity.base.BaseActivity;
+import com.common.androidtemplate.activity.base.BaseBackActivity;
 
 
 /**
@@ -17,7 +17,7 @@ import com.common.androidtemplate.activity.base.BaseActivity;
  * @作者：liang bao xian
  * @时间：2015年1月22日 上午10:44:50
  */
-public class ScreenInofActivity extends BaseActivity {
+public class ScreenInofActivity extends BaseBackActivity {
 	
 	private TextView resolutionRatioTv;
 	private TextView statusbarHeightTv;

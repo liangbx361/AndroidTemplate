@@ -10,10 +10,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Lib-CommonTools" />
+            <option value="$PROJECT_DIR$/Lib-Net-Volley" />
+            <option value="$PROJECT_DIR$/Lib-Widget-PullToRefresh" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/commontools" />
-            <option value="$PROJECT_DIR$/pulltorefresh" />
-            <option value="$PROJECT_DIR$/volley" />
           </set>
         </option>
       </GradleProjectSettings>

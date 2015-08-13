@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.common.androidtemplate.R;
-import com.common.androidtemplate.activity.base.BaseActivity;
+import com.common.androidtemplate.activity.base.BaseBackActivity;
 
 /**
  * 
@@ -29,7 +29,7 @@ import com.common.androidtemplate.activity.base.BaseActivity;
  * @作者：liang bao xian
  * @时间：2014年8月25日 下午4:20:21
  */
-public class SignatureActivity extends BaseActivity implements OnClickListener{
+public class SignatureActivity extends BaseBackActivity implements OnClickListener{
 	
 	private FrameLayout canvasFl;
 	private TextView hintTv;

@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
-import com.common.androidtemplate.activity.base.BaseActivity;
+import com.common.androidtemplate.activity.base.BaseBackActivity;
 import com.common.androidtemplate.app.TEMApp;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class LogActivity extends BaseActivity {
+public class LogActivity extends BaseBackActivity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){

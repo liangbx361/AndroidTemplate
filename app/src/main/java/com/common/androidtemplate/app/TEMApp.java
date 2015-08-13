@@ -38,7 +38,9 @@ public class TEMApp extends Application {
 		mApp = this;
 
 		// Volley请求队列、图片类实例化
-		mRequestQueue = Volley.newRequestQueue(getApplicationContext(), null);
+		mRequestQueue = Volley.newRequestQueue(getApplicationContext(), Utils
+				.getDiskCacheDir(getApplicationContext(), "volley")
+				.getAbsolutePath(), null);
 		float density = getResources().getDisplayMetrics().density;
 		mImageCache = new VolleyImageCache((int) (density * 4 * 1024 * 1024));
 		mImageLoader = new ImageLoader(mRequestQueue, mImageCache);

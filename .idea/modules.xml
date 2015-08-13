@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTemplate.iml" filepath="$PROJECT_DIR$/AndroidTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lib-CommonTools/Lib-CommonTools.iml" filepath="$PROJECT_DIR$/Lib-CommonTools/Lib-CommonTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lib-Net-Volley/Lib-Net-Volley.iml" filepath="$PROJECT_DIR$/Lib-Net-Volley/Lib-Net-Volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lib-Widget-PullToRefresh/Lib-Widget-PullToRefresh.iml" filepath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/Lib-Widget-PullToRefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/commontools/commontools.iml" filepath="$PROJECT_DIR$/commontools/commontools.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
     </modules>
   </component>
 </project>
