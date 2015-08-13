@@ -1,0 +1,54 @@
+﻿{
+  "respCode": "0",
+  "favourNum": 0,
+  "phone": "0598-3727888",
+  "detail": "一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六",
+  "saleAddress": "解放路800号（东门小学向西80米）",
+  "imagesUrl": [
+    {
+      "name": "效果图",
+      "images": [
+        "http://175.44.129.194:8080/upload/fdc/201408/43FA7BD08EBA49A7A6D7C0416FCF5366.jpg"
+      ]
+    },
+    {
+      "name": "户型图",
+      "images": [
+        "http://175.44.129.194:8080/upload/fdc/201408/29B4F03CD1FA4B60AB425CA16F19F390.jpg",
+        "http://175.44.129.194:8080/upload/fdc/201408/FF16FBC85C974DF6B08B2C1D19AB1227.jpg",
+        "http://175.44.129.194:8080/upload/fdc/201408/AA1DA28CD7C54395BBE713910467C99D.jpg",
+        "http://175.44.129.194:8080/upload/fdc/201408/03F51174B28C4E5DA7749A67AD3FA5B2.jpg",
+        "http://175.44.129.194:8080/upload/fdc/201408/281913CB17DE40D59ED654E066F83D12.jpg",
+        "http://175.44.129.194:8080/upload/fdc/201408/B80FF6E1582E4B8E882EEFA3333D37FA.jpg",
+        "http://175.44.129.194:8080/upload/fdc/201408/47D1C5D294EF44CD9163E167B15CB34D.jpg"
+      ]
+    },
+    {
+      "name": "交通图",
+      "images": [
+        "http://175.44.129.194:8080/upload/fdc/201408/80CF05D2F14248D5A9D4749F37C423DE.jpg"
+      ]
+    },
+    {
+      "name": "规划图",
+      "images": [
+        "http://175.44.129.194:8080/upload/fdc/201408/2F48DF55124C432F9E2710F21F5EC0EC.jpg"
+      ]
+    },
+    {
+      "name": "缩略图",
+      "images": [
+        "http://175.44.129.194:8080/upload/fdc/201408/B2426052654B4AB18A2F921F3A6A0E39.jpg"
+      ]
+    }
+  ],
+  "title": "儒林苑",
+  "averagePrice": "4900",
+  "address": "儒林苑位于永安原职专地块、城关燕东片区解放路800号",
+  "respMsg": "操作成功",
+  "longitude": null,
+  "latitude": null,
+  "videosUrl": [],
+  "collectState": 0,
+  "favourState": 0
+}

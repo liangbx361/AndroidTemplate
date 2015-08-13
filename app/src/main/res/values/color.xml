@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    
+    <!-- 通用背景色 -->
+    <color name="common_bg_color">#ffffffff</color>
+
+    <!-- actionbar 菜单文字颜色 -->
+    <color name="actionbar_menu_text_color">#ffff732e</color>
+
+    <!-- actionbar 标题颜色 -->
+    <color name="actionbar_tittle_color">#ffff732e</color>
+
+    <!-- 通用菜单字体颜色 -->
+    <color name="common_menu_text_color">#ffff732e</color>
+
+    <!-- 提示类型字体颜色 -->
+    <color name="hint_text_color">#ff999999</color>
+
+    <!-- 通用按钮上的字体颜色 -->
+
+    <color name="common_confirm_text_color">#ffffffff</color>
+    <color name="common_cancle_text_color">#ffff732e</color>
+
+</resources>

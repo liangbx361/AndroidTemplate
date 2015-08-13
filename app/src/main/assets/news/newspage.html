@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml;charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="comment.css" rel="stylesheet" type="text/css"/>
+<link href="caipiao.css" rel="stylesheet" type="text/css"/>
+<link href="vote.css" rel="stylesheet" type="text/css"/>
+<link href="plugin.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="newspage.js"></script>
+<style type="text/css">
+@font-face {
+ font-family: 'myface';
+ src: url('/data/data/com.netease.newsreader.activity/files/regular.ttf');
+}
+body {
+	padding: 15% 0% 3% 0%;
+	margin: 0px;
+	line-height: 160%;
+	background: #f0f0f0;
+	word-wrap: break-word;
+	overflow:auto;
+	overflow-x:hidden;
+	font-family: 'myface';
+}
+hr {
+	height:2px;
+	border:0px;
+	background:url(line.png) repeat-x;
+}
+.tCenter {
+	text-align: center
+}
+.marTopminus4 {
+	margin-top: -4px
+}
+.marTop2 {
+	margin-top: 2px
+}
+.marTop6 {
+	margin-top: 6px
+}
+.marTop10 {
+	margin-top: 10px
+}
+.marTop20 {
+	margin-top: 20px
+}
+.marTop30 {
+	margin-top: 30px
+}
+.marTop50 {
+	margin-top: 50px
+}
+.marLeft10 {
+	margin-left: 10px
+}
+.marRight10 {
+	margin-right: 10px
+}
+.marRight5 {
+	margin-right: 5px
+}
+.marBottom10 {
+	margin-bottom: 10px
+}
+.marBottom20 {
+	margin-bottom: 20px
+}
+.marBottom50 {
+	margin-bottom: 50px
+}
+.atitle {
+	color: #1f1f1f;
+	padding: 3px 0;
+	font-size: 20px;
+}
+.pintitle {
+	color: #ffffff;
+	padding: 3px 0;
+	font-size: 18px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.apptitle {
+	color: #464646;
+	font-size: 21px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.atime {
+	color: #949494;
+	padding: 0px 0;
+	font-size: 12px;
+}
+.pintime {
+	color: #ffffff;
+	padding: 0px 0;
+	font-size: 12px;
+}
+.apptime {
+	color: #949494;
+	font-size: 12px;
+	line-height: 15px;
+}
+.viewMore {
+	margin: 10px 10px 5px 10px;
+	text-align: center;
+}
+.viewMore .viewMore-btn {
+	background: url("res/drawable-hdpi/view_more.png") no-repeat scroll right center transparent;
+	cursor: pointer;
+	left: 50%;
+	line-height: 21px;
+	margin: -10px 0 0 -30px;
+	padding-right: 18px;
+	position: absolute;
+	top: 50%;
+}
+.viewMore .loading {
+	display: none;
+	cursor: pointer;
+	left: 50%;
+	line-height: 21px;
+	margin: -10px 0 0 -30px;
+	padding-right: 18px;
+	position: absolute;
+	top: 50%;
+}
+.viewMore a {
+	-moz-border-radius: 4px 4px 4px 4px;
+	background: url("res/drawable-hdpi/view_more.png") repeat-x scroll left top transparent;
+	border: 1px solid #C2C2C2;
+	color: #484848;
+	display: block;
+	font-weight: 700;
+	height: 32px;
+	line-height: 32px;
+	outline: medium none;
+	position: relative;
+}
+.loading {
+	text-align: center;
+}
+.contentstyle {
+	color: #585858;
+	font-size: 18px;
+	font-weight:normal;
+	padding: 0 0 0 0;
+}
+.contentstyle p {
+	margin: 10px 5% 0px 5%;
+}
+em {
+	font-style: normal;
+	font-weight: 400;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+.marg0auto {
+	margin: 0 auto;
+}
+.h1style {
+	color: #2f2f2f;
+	font-size: 18px;
+	font-weight: bold;
+	margin:10px 0px;
+}
+.h2style {
+	color: #434647;
+	font-size: 18px;
+	font-weight: bold;
+	margin:10px 0px;
+}
+.digeststyle_start {
+	border: #c6c7c7 solid 1px;
+	background-color: #e7e7e7;
+	margin: 0px 5% 2px 5%;
+	padding: 8px 8px 8px 8px;
+	color:#7F7F7F;
+	line-height: 150%;
+	font-weight: normal;
+	font-size: 18px;
+}
+.digeststyle_end {
+	border: #c6c7c7 solid 1px;
+	background-color: #e7e7e7;
+	margin: 0px 5% 2px 5%;
+	padding: 8px 8px 8px 8px;
+	color:#7F7F7F;
+	line-height: 150%;
+	font-weight: normal;
+	font-size: 18px;
+}
+.digesttagstyle {
+	padding: 3px 6px 3px 0px;
+	color: #545454;
+	font-weight: bold;
+	margin-right: 3px;
+}
+.schemestartstyle {
+}
+.columnstyle {
+	color: #545454;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 5px 5%;
+	background: url(biz_news_newspage_relative_bg.png);
+}
+.columnitmestyle {
+	color: #2f2f2f;
+	text-align: center left;
+	margin: 8px 0px;
+	font-weight: bold;
+	padding: 0px 5%;
+}
+.relativenewsstyle {
+	text-align: center left;
+	margin: 8px 0px;
+	padding: 0px 5%;
+}
+.linkstyle {
+	color: #5091d2
+}
+.contentpaddingstyle {
+	padding: 0% 5%;
+}
+.applinkstyle {
+	color: #ffffff;
+	text-align: center;
+}
+.appinfo {
+	color: #949494;
+	font-size: 12px;
+	line-height: 15px;
+}
+.contentpaddingstyle {
+	padding: 0% 5%;
+}
+.contentmargintyle {
+	margin: 0% 5%;
+}
+.app_downBg {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #ffffff;
+	text-align:center;
+	padding: 2px 10px 2px 10px;
+	margin-bottom: 10px;
+	background-image: url('download_bg.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.imgcenterstyle {
+	vertical-align: middle;
+	width:16px;
+	margin-right:2px;
+	margin-bottom:2px;
+}
+.topicStyle {
+	border:#e7e7e7 solid 1px;
+	background-color: #f8f8f8;
+	margin: 10px 5% 3px 5%;
+	padding: 0px 5px 0px 5px;
+}
+.appshowcomment {
+	font-size:22px;
+	border:1px solid #cacaca;
+	margin-top: 10px;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.02, rgb(255,255,255)), color-stop(0.05, rgb(241,241,241)), color-stop(1, rgb(230,230,230)) );
+	width:100%;
+	height:40px;
+	text-align:center;
+	color:#2f2f2f
+}
+.imgmarginstyle {
+	margin: 0 5% 3px 4%;
+}
+.appimgmarginstyle {
+	margin: 0 2% 3px 4%;
+}
+.bigimgmarginstyle {
+	margin: 5px 5% 3px 5%;
+}
+.bigpinterestimgmarginstyle {
+	margin: 1px 0px 0px 0px;
+}
+.bigpinterestheadimgmarginstyle {
+	margin: 0px 0px 0px 0px;
+}
+.bigvideoimgmarginstyle {
+	margin: 10px 5% 3px 5%;
+}
+.tieMorebutton {
+	border:1px solid #cacaca;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.02, rgb(255,255,255)), color-stop(0.05, rgb(241,241,241)), color-stop(1, rgb(230,230,230)) );
+	width:90%;
+	height:40px;
+	margin:10px;
+	text-align:center;
+	color:#2f2f2f;
+	font-size: 90%;
+}
+.pin_title {
+	background:url(desc_bg.png);
+}
+.ad_subtitle {
+	color: #f0f0f0;
+	font-size: 70%;
+	background-color:#4d86c6;
+	margin-right: 0.4em;
+	padding: 1px 0.25em 1px 0.3em;
+	vertical-align: top;
+}
+.ad_subtitle_more {
+	color: #f0f0f0;
+	font-size: 70%;
+	margin-right: 0.4em;
+	padding: 1px 0.25em 1px 0.3em;
+	vertical-align: top;
+	visibility:hidden;
+}
+.ad_title {
+	text-align: center left;
+	margin: 8px 0px;
+	padding: 0px 0px;
+	color: #5091d2;
+}
+</style>
+</head>
+<body>
+<div id="title_pre"></div>
+
+<!-- <div class="contentpaddingstyle" style="margin-top:4px;margin-bottom:4px;" >
+     
+        </div> -->
+
+<div id="article_body" class="contentstyle"><br>
+  <p>　　当限购政策像多米诺骨牌一样倒下，限贷这个楼市政策的最后一道防线似乎也未能幸免。倘若比限购更坚硬的限贷已听到冰裂的声音，楼市"变天"不言而喻。</p>
+  <p>　　<strong>"首套房"新定义</strong></p>
+  <p>　　8月16日，一份发自上海、名为《住房金融业务部业务通知单》（以下简称《通知单》）的文件曝光，该文件中重新定义了"首套房"概念以及首套房最低利率降至8折的内容，被看做是在限购政策毫不放松的市场下，一线城市松绑限贷、曲线救市的开始。</p>
+  <p>　　多个渠道证实，该《通知单》为建行上海分行内部文件，虽然建行上海分行并未予以正面回应，但业内认为，此类限贷放松的信息会进一步改变购房人犹豫不决的预期。在信贷放松的刺激下，楼市有望在"金九银十"的传统旺季迎来一波成交高峰。</p>
+  <p>　　《通知单》中的四点内容尤为引人关注，其中前两点涉及银行重新认定"首套房贷"情形，分别为：第一，对于因公调动工作单位迁居上海市的，原所在地住房贷款结算，在上海首次购房算首套；第二，对于上海市居民，2011年1月房地产调控政策出台前已贷到两笔及以下房贷，现已全部结清的，在上海市首次购买商品房申请贷款可以认为首套房贷。</p>
+  <p>　　此外，对于居民家庭仅有一套自有住房或无住房，名下购房贷款已全部结清的，在上海市购房申请贷款可认定为二套房贷款。在价格上，首套房最低可打8折利率，但享受8折的客户在该行金融资产必须大于贷款总额的80%。</p>
+  <p>　　<strong>预期两极化</strong></p>
+  <p>　　"截至目前了解到的情况是，该文是建行上海分行发的，政策核心是认房不认贷，实际情况还有待进一步了解。"包括易居中国执行总裁丁祖昱在内的多位代理行与上海本地开发商负责人证实了《通知单》的存在，但对于《通知单》可能产生的效果，业内明显分为两派。</p>
+  <p>　　一方观点认为，"目前让楼市降温的一个很大因素就是信贷池水位不够，未来一旦注入流动性，那么市场长时间观望的信念会崩塌，部分受信贷收紧影响的观望者，未来有望积极入市，"上海易居房地产研究院研究员严跃进指出，自内蒙古呼和浩特市率先明文取消限购后，到目前为止在46个实施限购政策的城市中，已经有37个城市或明文或私下默许放松了限购，但是从实际成交量来说，限购松绑并未带动成交量的上升，然而一旦限贷政策放松，将会对楼市带来实质性的提振。</p>
+  <p>　　另一方观点则认为，"文件"信号作用要大于实际效果。以北京中原地产首席分析师张大伟为例，在他看来，符合所谓文件所提要求的购房人为数不多，而且不排除是建行上海分行为了回笼开发贷所提出的短期政策。</p>
+  <p>　　<strong>北京按兵不动</strong></p>
+  <p>　　严跃进指出，从上海的具体政策看，限购政策还不能松绑，但限贷政策或有松绑的空间。"限贷政策的松绑是有条件性的松绑，即将此类优质信贷资源优先导入那些购房能力强、信用程度高的改善型需求者。而对于一些购房经济基础差的刚需购房者，可能还难以享受此类信贷政策的优惠。"</p>
+  <p>　　北京商报记者从北京地区部分银行了解到，目前北京地区首套房贷仍未现任何松动。贷款机构"伟嘉安捷" 指出，北京地区只有北京农商行对首次购房人群出现利率方面的优惠，但是办理的条件也不少。而目前其他各大银行首套房贷利率仍然执行基准利率，个别银行甚至还要再上浮5%，并没有出现优惠或松动的迹象。但却也承认，目前在批贷时限上与此前相比有了较大幅度的改善。</p>
+  <p>　　值得一提的是，就在刚刚过去的上周末，北京共有包括琨御府、龙湖长城源著、华润密云橡树湾、合生世界村在内的十余个楼盘扎堆入市，其中开盘当日即宣布售罄的达到5个，既包括琨御府这样的城中豪宅，也包括合生世界村等部分刚需盘，业内分析，随着新房市场调整到位，部分刚需及改善型需求者将逐步入市。</p>
+</div>
+<div id="moreButton" class="viewMore contentpaddingstyle" style="clear:both; display:none;"> <a href="javascript:;" hidefocus="true" onclick="over(this);"> <em id="loading" class="loading">正在载入...</em> <span id="showmore" class="viewMore-btn">查看全文</span> </a> </div>
+
+<!-- 
+        <div id="more" class="content marBottom50"></div>
+         -->
+
+</body>
+</html>

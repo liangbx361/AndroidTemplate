@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    xmlns:android_custom="http://schemas.android.com/apk/res"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scaleType="center"
+            android:src="@drawable/base_article_bigimage" />
+
+        <com.common.tools.widget.RoundProgressBar
+            android:id="@+id/progress"
+            android:layout_width="65dip"
+            android:layout_height="65dip"
+			android:layout_centerInParent="true"
+            android_custom:roundColor="@android:color/transparent"
+            android_custom:roundProgressColor="#1e90ed"
+            android_custom:roundWidth="10dp"
+            android_custom:textColor="@android:color/darker_gray"
+            android_custom:textSize="12sp" >
+        </com.common.tools.widget.RoundProgressBar>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始" />
+
+</LinearLayout>

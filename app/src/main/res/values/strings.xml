@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">安卓通用模板</string>
+
+    <!-- 无内容时的提示  -->
+    <string name="empty_toast">暂无内容哦</string>
+
+    <string name="ac_dslv">DragSortListView</string>
+    <string name="ac_dslv_desc">拖动排序滑动删除的列表</string>
+    <string name="ac_pull_refresh">PullRefreshListView</string>
+    <string name="ac_pull_refresh_desc">拉动刷新的列表</string>
+    <string name="ac_gen_barcode">生成二维码</string>
+    <string name="ac_gen_barcode_desc">输入字符串生成二维码</string>
+    <string name="ac_news">新闻浏览</string>
+    <string name="ac_news_desc">新闻浏览，采用混合式开发</string>
+    <string name="ac_hz_to_py">汉字转拼音</string>
+    <string name="ac_hz_to_py_desc">汉字转拼音使用方法</string>
+    <string name="ac_pick_photo">取照片</string>
+    <string name="ac_pick_photo_desc">拍照或者从相册中选取照片</string>
+    <string name="ac_signature">电子签名</string>
+    <string name="ac_signature_desc">电子签名，保存成图像</string>
+    <string name="ac_data_parser">数据解析</string>
+    <string name="ac_data_parser_desc">通过本地解析数据</string>
+    <string name="ac_imgae_progress">图片下载带进度显示</string>
+    <string name="ac_imgae_progress_desc">修改Volley框架，增加支持下载进度回调</string>
+    <string name="ac_domain_request">域名请求测试</string>
+    <string name="ac_domain_request_desc">测试volley 是否支持域名请求方式</string>
+    <string name="ac_log">生成日志文件</string>
+    <string name="ac_log_desc">生成日志文件</string>
+    <string name="ac_screen_info">屏幕信息</string>
+    <string name="ac_screen_info_desc">包含屏分辨率、状态栏高度、DPI等</string>
+</resources>

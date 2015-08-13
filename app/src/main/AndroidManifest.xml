@@ -1,0 +1,173 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.common.androidtemplate">
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 手机震动的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 检查网络的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 读取手机信息的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 联网的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+
+    <!-- 享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 桌面图标权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme"
+        android:name=".app.TEMApp">
+
+        <activity
+            android:name=".main.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 可拖动排序滑动删除的列表模板 -->
+        <activity
+            android:name=".activity.DragSortListViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_dslv"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 拉动刷新的列表模板 -->
+        <activity
+            android:name=".activity.PullRefreshListViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_pull_refresh"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 生成二维码 -->
+        <activity
+            android:name=".activity.GenBarcodeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_gen_barcode"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 新闻浏览 -->
+        <activity
+            android:name=".activity.NewsReaderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_news"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 汉字转拼音 -->
+        <activity
+            android:name=".activity.HzToPinyinActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_hz_to_py"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 取图 -->
+        <activity
+            android:name=".activity.PickPhotoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_pick_photo"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 电子签名 -->
+        <activity
+            android:name=".activity.SignatureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_signature"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- 数据解析 -->
+        <activity
+            android:name=".activity.DataParserActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_data_parser"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 下载进度 -->
+        <activity
+            android:name=".activity.ImageProgressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_imgae_progress"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 域名请求测试 -->
+        <activity
+            android:name=".activity.TimeStampActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_domain_request"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 生成日志文件 -->
+        <activity
+            android:name=".activity.LogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_log"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 屏幕信息 -->
+        <activity
+            android:name=".activity.ScreenInofActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_screen_info"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+    <logback>
+        <configuration>
+            <appender
+                name="LOGCAT"
+                class="ch.qos.logback.classic.android.LogcatAppender" >
+                <tagEncoder>
+                    <pattern>%logger{0}</pattern>
+                </tagEncoder>
+                <encoder>
+                    <pattern>[ %thread ] %msg%n</pattern>
+                </encoder>
+            </appender>
+
+            <root level="WARN" >
+                <appender-ref ref="LOGCAT" />
+            </root>
+        </configuration>
+    </logback>
+
+</manifest>
