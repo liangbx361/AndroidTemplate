@@ -1,5 +1,6 @@
 package com.common.androidtemplate.activity.base;
 
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -18,7 +19,7 @@ import com.common.androidtemplate.R;
  * @author liangbx
  *
  */
-public class BaseExtraLayoutActivity extends BaseActionBarActivity implements OnClickListener{
+public class BaseExtraLayoutActivity extends ActionBarActivity implements OnClickListener{
 	
 	private FrameLayout rootLayout;
 	private ViewGroup emptyContentLayout;

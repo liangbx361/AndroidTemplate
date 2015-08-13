@@ -47,12 +47,12 @@ public class TimeStampActivity extends BaseActivity implements Listener<TimeStam
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		//此处设置菜单		
-		setDisplayHomeAsUpEnabled(true);
-		setDisplayShowHomeEnabled(false);
+//		//此处设置菜单
+//		setDisplayHomeAsUpEnabled(true);
+//		setDisplayShowHomeEnabled(false);
 		
 		requestTimeStamp(Method.GET, "", getTimeStampRequestParams(), this, this, "正在请求中，请稍候...");
-		setIndeterminateBarVisibility(true);		
+//		setIndeterminateBarVisibility(true);
 		return super.onCreateOptionsMenu(menu);
 	}
 	
@@ -103,7 +103,7 @@ public class TimeStampActivity extends BaseActivity implements Listener<TimeStam
 	 */
 	@Override
 	public void onErrorResponse(VolleyError error) {		
-		setIndeterminateBarVisibility(false);
+//		setIndeterminateBarVisibility(false);
 		if(pDialog != null) pDialog.dismiss();
 	}
 	
@@ -113,7 +113,7 @@ public class TimeStampActivity extends BaseActivity implements Listener<TimeStam
 	@Override
 	public void onResponse(TimeStamp response) {
 		mTimeStamp = response;
-		setIndeterminateBarVisibility(false);
+//		setIndeterminateBarVisibility(false);
 		if(pDialog != null) pDialog.dismiss();
 	}
 }

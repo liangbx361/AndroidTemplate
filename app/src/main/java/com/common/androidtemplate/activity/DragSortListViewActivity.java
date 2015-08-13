@@ -56,7 +56,7 @@ public class DragSortListViewActivity extends BaseActivity implements DropListen
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		setDisplayHomeAsUpEnabled(true);
+//		setDisplayHomeAsUpEnabled(true);
 		
 		return super.onCreateOptionsMenu(menu);
 	}

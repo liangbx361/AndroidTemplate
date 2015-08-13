@@ -49,7 +49,7 @@ public class GenBarcodeActivity extends BaseActivity {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		setDisplayHomeAsUpEnabled(true);
+//		setDisplayHomeAsUpEnabled(true);
 		
 		return super.onCreateOptionsMenu(menu);
 	}

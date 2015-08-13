@@ -42,8 +42,8 @@ public class DataParserActivity extends BaseActivity{
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		setDisplayHomeAsUpEnabled(true);
-		setIndeterminateBarVisibility(false);
+//		setDisplayHomeAsUpEnabled(true);
+//		setIndeterminateBarVisibility(false);
 		return super.onCreateOptionsMenu(menu);
 	}
 }
