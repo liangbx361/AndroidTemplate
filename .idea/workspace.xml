@@ -10,181 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63417097-47af-49e1-9b27-b4623f24fd66" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ImageProgressActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ImageProgressActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/LogActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/LogActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ScreenInofActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ScreenInofActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/app/TEMApp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/app/TEMApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseToolBarActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors_material.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/style_material.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/style_material.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" />
+      <change type="DELETED" beforePath="E:\ND\project\common\AndroidTemplate\.gitignore.orig" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/main/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/main/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\.gitignore" afterPath="$PROJECT_DIR$/Lib-CommonTools/.gitignore" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\build.gradle" afterPath="$PROJECT_DIR$/Lib-CommonTools/build.gradle" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\commontools.iml" afterPath="$PROJECT_DIR$/Lib-CommonTools/Lib-CommonTools.iml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\proguard-rules.pro" afterPath="$PROJECT_DIR$/Lib-CommonTools/proguard-rules.pro" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\androidTest\java\com\common\tools\ApplicationTest.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/androidTest/java/com/common/tools/ApplicationTest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\AndroidManifest.xml" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\date\FormatDateTime.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/date/FormatDateTime.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\date\ShowTime.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/date/ShowTime.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\device\DeviceUuidFactory.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/device/DeviceUuidFactory.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\device\Installation.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/device/Installation.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\device\WifiDevice.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/device/WifiDevice.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\exception\ExceptionLog.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/exception/ExceptionLog.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\AssetsUtil.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/AssetsUtil.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\DataCleanManager.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/DataCleanManager.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\FileDirUtil.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/FileDirUtil.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\FileEncrypt.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/FileEncrypt.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\FileSizeUtil.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/FileSizeUtil.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\ImgEncrypt.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/ImgEncrypt.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\file\ZipUtil.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/file/ZipUtil.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\format\ByteChar.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/format/ByteChar.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\format\ByteHelper.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/format/ByteHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\format\HexStringBytes.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/format/HexStringBytes.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\media\BitmapHelper.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/media/BitmapHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\media\CameraHelper.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/media/CameraHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\net\ErrorProcess.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/net/ErrorProcess.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\net\HttpHelper.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/net/HttpHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\net\NetworkCheck.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/net/NetworkCheck.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\net\ResultCode.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/net/ResultCode.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\phone\RootUtil.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/phone/RootUtil.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\phone\TelephonyHelper.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/phone/TelephonyHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\pinyin\HanziToPinyin.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/pinyin/HanziToPinyin.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\pinyin\PinYin.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/pinyin/PinYin.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\security\Base64Tools.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/security/Base64Tools.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\security\CRC16.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/security/CRC16.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\security\Des3Tools.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/security/Des3Tools.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\security\DesTools.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/security/DesTools.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\security\MD5Tools.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/security/MD5Tools.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\task\BaseTask.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/task/BaseTask.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\task\TaskDoneListener.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/task/TaskDoneListener.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\util\DensityUtil.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/util/DensityUtil.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\util\PageInfo.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/util/PageInfo.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\verify\EmailVerify.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/verify/EmailVerify.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\verify\IdentityCardVerify.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/verify/IdentityCardVerify.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\verify\MobileVerify.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/verify/MobileVerify.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\CompatViewPagerScrollView.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/CompatViewPagerScrollView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\ComputeViewHeight.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/ComputeViewHeight.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\GrideViewForScrollView.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/GrideViewForScrollView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\LinearLayoutThatDetectsSoftKeyboard.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/LinearLayoutThatDetectsSoftKeyboard.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\ListViewForScrollView.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/ListViewForScrollView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\MaxByteEditText.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/MaxByteEditText.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\OffsetHorizontalScrollView.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/OffsetHorizontalScrollView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\ReHeightGridView.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/ReHeightGridView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\RefreshAutoCompleteTextView.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/RefreshAutoCompleteTextView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\RoundProgressBar.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/RoundProgressBar.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\ToastHelper.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/ToastHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\TouchControllViewPager.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/TouchControllViewPager.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\adapter\ThreeStyleExplandAdapter.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/adapter/ThreeStyleExplandAdapter.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\java\com\common\tools\widget\adapter\ViewAdapter.java" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/java/com/common/tools/widget/adapter/ViewAdapter.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\res\values-w820dp\dimens.xml" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\res\values\attrs.xml" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/res/values/attrs.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\res\values\dimens.xml" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\commontools\src\main\res\values\strings.xml" afterPath="$PROJECT_DIR$/Lib-CommonTools/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\.gitignore" afterPath="$PROJECT_DIR$/Lib-Net-Volley/.gitignore" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\build.gradle" afterPath="$PROJECT_DIR$/Lib-Net-Volley/build.gradle" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\proguard-rules.pro" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/proguard-rules.pro" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\pulltorefresh.iml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/Lib-Widget-PullToRefresh.iml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\androidTest\java\androidtemplete\common\com\pulltorefresh\ApplicationTest.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/androidTest/java/androidtemplete/common/com/pulltorefresh/ApplicationTest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\AndroidManifest.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\ILoadingLayout.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/ILoadingLayout.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\IPullToRefresh.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/IPullToRefresh.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\LoadingLayoutProxy.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/LoadingLayoutProxy.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\OverscrollHelper.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/OverscrollHelper.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshBase.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshBase.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshGridView.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshGridView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshHorizontalScrollView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshListView.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshListView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshScrollView.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshScrollView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\PullToRefreshWebView.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshWebView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/extras/PullToRefreshWebView2.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/extras/SoundPullEventListener.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/FlipLoadingLayout.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\IndicatorLayout.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/IndicatorLayout.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\LoadingLayout.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/LoadingLayout.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/RotateLoadingLayout.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\Utils.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/Utils.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\java\com\handmark\pulltorefresh\library\internal\ViewCompat.java" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/java/com/handmark/pulltorefresh/library/internal/ViewCompat.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\anim\slide_in_from_bottom.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/anim/slide_in_from_bottom.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\anim\slide_in_from_top.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/anim/slide_in_from_top.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\anim\slide_out_to_bottom.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/anim/slide_out_to_bottom.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\anim\slide_out_to_top.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/anim/slide_out_to_top.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-hdpi\base_pull_list_msg_indicator_arrow_down_drawable.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-hdpi/base_pull_list_msg_indicator_arrow_down_drawable.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-hdpi\default_ptr_flip.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-hdpi/default_ptr_flip.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-hdpi\default_ptr_rotate.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-hdpi/default_ptr_rotate.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-hdpi\indicator_arrow.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-hdpi/indicator_arrow.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-mdpi\default_ptr_flip.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-mdpi/default_ptr_flip.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-mdpi\default_ptr_rotate.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-mdpi/default_ptr_rotate.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-mdpi\indicator_arrow.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-mdpi/indicator_arrow.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-xhdpi\default_ptr_flip.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-xhdpi/default_ptr_flip.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-xhdpi\default_ptr_rotate.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-xhdpi/default_ptr_rotate.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable-xhdpi\indicator_arrow.png" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable-xhdpi/indicator_arrow.png" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable\indicator_bg_bottom.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable/indicator_bg_bottom.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\drawable\indicator_bg_top.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/drawable/indicator_bg_top.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\layout\cpull_to_refresh_header_vertical.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/layout/cpull_to_refresh_header_vertical.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\layout\pull_to_refresh_header_horizontal.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/layout/pull_to_refresh_header_horizontal.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\layout\pull_to_refresh_header_vertical.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/layout/pull_to_refresh_header_vertical.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\values\attrs.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/values/attrs.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\values\dimens.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/values/dimens.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\values\ids.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/values/ids.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\values\pull_refresh_strings.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/values/pull_refresh_strings.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\pulltorefresh\src\main\res\values\strings.xml" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\.gitignore" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/.gitignore" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\build.gradle" afterPath="$PROJECT_DIR$/Lib-Widget-PullToRefresh/build.gradle" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\proguard-rules.pro" afterPath="$PROJECT_DIR$/Lib-Net-Volley/proguard-rules.pro" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\androidTest\java\com\android\volley\ApplicationTest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/androidTest/java/com/android/volley/ApplicationTest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\AndroidManifest.xml" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\AuthFailureError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/AuthFailureError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\Cache.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/Cache.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\CacheDispatcher.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/CacheDispatcher.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\DefaultRetryPolicy.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/DefaultRetryPolicy.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\ExecutorDelivery.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/ExecutorDelivery.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\Network.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/Network.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\NetworkDispatcher.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/NetworkDispatcher.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\NetworkError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/NetworkError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\NetworkResponse.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/NetworkResponse.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\NoConnectionError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/NoConnectionError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\ParseError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/ParseError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\Request.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/Request.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\RequestQueue.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/RequestQueue.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\Response.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/Response.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\ResponseDelivery.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/ResponseDelivery.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\RetryPolicy.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/RetryPolicy.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\ServerError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/ServerError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\TimeoutError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/TimeoutError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\VolleyError.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/VolleyError.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\VolleyLog.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/VolleyLog.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\AndroidAuthenticator.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/AndroidAuthenticator.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\Authenticator.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/Authenticator.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\BasicNetwork.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/BasicNetwork.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\ByteArrayPool.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/ByteArrayPool.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\ClearCacheRequest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/ClearCacheRequest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\DiskBasedCache.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/DiskBasedCache.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\HttpClientStack.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/HttpClientStack.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\HttpHeaderParser.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/HttpHeaderParser.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\HttpStack.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/HttpStack.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\HurlStack.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/HurlStack.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\ImageLoader.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/ImageLoader.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\ImageRequest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/ImageRequest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\JsonArrayRequest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/JsonArrayRequest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\JsonObjectRequest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/JsonObjectRequest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\JsonRequest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/JsonRequest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\NetworkImageView.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/NetworkImageView.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\NoCache.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/NoCache.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\PoolingByteArrayOutputStream.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/PoolingByteArrayOutputStream.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\RequestFuture.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/RequestFuture.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\StringRequest.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/StringRequest.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley\toolbox\Volley.java" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/java/com/android/volley/toolbox/Volley.java" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\res\values\strings.xml" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\src\main\res\values\styles.xml" afterPath="$PROJECT_DIR$/Lib-Net-Volley/src/main/res/values/styles.xml" />
-      <change type="MOVED" beforePath="E:\ND\project\common\AndroidTemplate\volley\volley.iml" afterPath="$PROJECT_DIR$/Lib-Net-Volley/Lib-Net-Volley.iml" />
     </list>
     <ignored path="AndroidTemplate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -242,59 +77,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SignatureActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java">
+      <file leaf-file-name="BaseToolBarActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseToolBarActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageProgressActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ImageProgressActivity.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.6967213">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScreenInofActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ScreenInofActivity.java">
+      <file leaf-file-name="AppCompatActivity.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../tools/android-sdk-windows/extras/android/m2repository/com/android/support/appcompat-v7/22.2.1/appcompat-v7-22.2.1-sources.jar!/android/support/v7/app/AppCompatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46124032">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/LogActivity.java">
+      <file leaf-file-name="DragSortListViewActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/DragSortListViewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseBackActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseBackActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -302,8 +123,22 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -4089,7 +3924,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/parser/TimeStampParser.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/task/TimeStampRequest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/TimeStampActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/Lib-Widget-PullToRefresh/build.gradle" />
@@ -4100,6 +3934,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ImageProgressActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ScreenInofActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/style_material.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors_material.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-v21/style_material.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseToolBarActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/main/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -4192,6 +4034,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="AndroidTemplate" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidTemplate" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidTemplate" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -4339,6 +4205,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidTemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="androidtemplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -4371,7 +4271,7 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="gradle.experimental" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
     <property name="SearchEverywhereHistoryKey" value="android device&#9;ACTION&#9;Android.RunDdms" />
@@ -4381,14 +4281,18 @@
     <property name="DEBUGGABLE_PROCESS" value="com.nd.hy.android.mooc" />
     <property name="SHOW_ALL_PROCESSES" value="true" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test/cheesesquare" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ND\project\common\AndroidTemplate\app\src\main\res\values-v21" />
       <recent name="E:\ND\project\common\AndroidTemplate\app\src\main\java\com\common\androidtemplate\activity" />
       <recent name="E:\ND\project\common\AndroidTemplate\app\src\main\java\com\common\androidtemplate" />
       <recent name="E:\ND\project\common\AndroidTemplate\app\src\main\java\com\common\androidtemplate\bean" />
       <recent name="E:\ND\project\common\AndroidTemplate\volley\src\main\java\com\android\volley" />
-      <recent name="E:\ND\project\common\AndroidTemplate\app\src\main\java\com\common\androidtemplate\activity\base" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.App">
@@ -4613,12 +4517,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329375" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.4974293" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2645074" sideWeight="0.506875" order="7" side_tool="true" content_ui="tabs" />
@@ -4629,18 +4534,17 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42837274" sideWeight="0.48714653" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2645074" sideWeight="0.493125" order="7" side_tool="false" content_ui="tabs" x="22" y="276" width="1556" height="308" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31225297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.320625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.320625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17625" sideWeight="0.38709676" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.48714653" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29" sideWeight="0.38709676" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.48714653" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991655" sideWeight="0.4974293" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -4660,134 +4564,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/PickPhotoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/DragSortListViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captures/SystemInfo_2015.08.13_10.43.25.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captures/SystemInfo_2015.08.13_10.43.32.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8926702">
-          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captures/SystemInfo_2015.08.13_10.43.48.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4895288">
-          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captures/SystemInfo_2015.08.13_10.44.00.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35602096">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captures/Trace_2015.08.13_11.23.18.trace">
-      <provider selected="true" editor-type-id="capture-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captures/Trace_2015.08.13_11.30.54.trace">
-      <provider selected="true" editor-type-id="capture-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/DragSortListViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4299611">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/assets/data/json/EstateDetail.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46303502">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/NewsReaderActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/HzToPinyinActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/DataParserActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib-Widget-PullToRefresh/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23151751">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib-Net-Volley/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4898,20 +4674,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="e#2828#2845#0" expanded="true" />
-            <element signature="e#3117#3142#0" expanded="true" />
-            <element signature="e#3401#3425#0" expanded="true" />
-            <element signature="e#5647#5663#0" expanded="true" />
-            <element signature="e#5921#5945#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5035,17 +4797,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseBackActivity.java">
+    <entry file="file://$PROJECT_DIR$/captures/SystemInfo_2015.08.13_10.43.25.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.065891474">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/captures/SystemInfo_2015.08.13_10.43.32.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93410856">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/Trace_2015.08.13_11.30.54.trace">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captures/Trace_2015.08.13_11.23.18.trace">
+      <provider selected="true" editor-type-id="capture-editor">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/LogActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.39728683">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -5053,10 +4833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ScreenInofActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46124032">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -5073,13 +4853,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/ScreenInofActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/SignatureActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46124032">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.75">
+          <caret line="1412" column="49" selection-start-line="1412" selection-start-column="49" selection-end-line="1412" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/style_material.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors_material.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/style_material.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.233333">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseBackActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/DataParserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="43" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/DragSortListViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../tools/android-sdk-windows/extras/android/m2repository/com/android/support/appcompat-v7/22.2.1/appcompat-v7-22.2.1-sources.jar!/android/support/v7/app/AppCompatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/activity/base/BaseToolBarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/common/androidtemplate/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6967213">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Material" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 状态栏颜色 -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!-- 标题栏颜色 -->
+        <item name="android:colorPrimary">@color/primary</item>
+
+        <item name="android:colorAccent">@color/accent</item>
+        <!-- 底部导航栏颜色 -->
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+    </style>
+</resources>
