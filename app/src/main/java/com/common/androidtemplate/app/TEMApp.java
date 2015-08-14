@@ -23,7 +23,6 @@ public class TEMApp extends Application {
 	// 网络
 	private RequestQueue mRequestQueue;
 	private ImageLoader mImageLoader;
-	private VolleyImageCache mImageCache;
 	private long requestTag = 0;
 
 	// 数据库
@@ -42,7 +41,7 @@ public class TEMApp extends Application {
 				.getDiskCacheDir(getApplicationContext(), "volley")
 				.getAbsolutePath(), null);
 		float density = getResources().getDisplayMetrics().density;
-		mImageCache = new VolleyImageCache((int) (density * 4 * 1024 * 1024));
+		VolleyImageCache mImageCache = new VolleyImageCache((int) (density * 4 * 1024 * 1024));
 		mImageLoader = new ImageLoader(mRequestQueue, mImageCache);
 		
 		if(NetConfig.HTTPS_ENABLE) {
@@ -62,7 +61,7 @@ public class TEMApp extends Application {
 	/**
 	 * 获取APP实例
 	 * 
-	 * @return
+	 * @return 返回App实例
 	 */
 	public synchronized static TEMApp getInstance() {
 		return mApp;
@@ -71,7 +70,7 @@ public class TEMApp extends Application {
 	/**
 	 * 获取网络请求队列
 	 * 
-	 * @return
+	 * @return 返回请求队列实例
 	 */
 	public RequestQueue getRequestQueue() {
 		return mRequestQueue;
@@ -80,7 +79,7 @@ public class TEMApp extends Application {
 	/**
 	 * 获取图片加载者
 	 * 
-	 * @return
+	 * @return 返回ImageLoader实例
 	 */
 	public ImageLoader getImageLoader() {
 		return mImageLoader;
@@ -89,7 +88,7 @@ public class TEMApp extends Application {
 	/**
 	 * 获取数据库对象
 	 * 
-	 * @return
+	 * @return 返回FinalDb实例
 	 */
 	public FinalDb getDb() {
 		return mFinalDb;
@@ -98,17 +97,16 @@ public class TEMApp extends Application {
 	/**
 	 * 获取请求标签(保证每次返回的都不重复)
 	 * 
-	 * @return
+	 * @return 返回请求的标签
 	 */
 	public synchronized String getRequestTag() {
 		requestTag++;
 		return requestTag + "";
 	}
-	
+
 	/**
 	 * 异常日志
-	 * @描述: 
-	 * @return
+	 * @return 返回异常日志记录
 	 */
 	public ExceptionLog getExLog() {
 		return exLog;

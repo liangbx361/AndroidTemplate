@@ -149,6 +149,12 @@
             android:label="@string/ac_screen_info"
             android:screenOrientation="portrait"/>
 
+        <!-- 用Toolbar + DrawerLayout实现的菜单侧滑 -->
+        <activity android:name=".activity.NavigationDrawerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_navigation_drawer"
+            android:screenOrientation="portrait"/>
+
     </application>
 
     <logback>

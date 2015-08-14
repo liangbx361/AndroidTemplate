@@ -1,0 +1,22 @@
+[
+  {
+    "menuId": "1",
+    "menuName": "布局模板",
+    "moduleName": "layout"
+  },
+  {
+    "menuId": "2",
+    "menuName": "控件模板",
+    "moduleName": "widget"
+  },
+  {
+    "menuId": "3",
+    "menuName": "框架模板",
+    "moduleName": "framework"
+  },
+  {
+    "menuId": "4",
+    "menuName": "能力平台模板",
+    "moduleName": "platform"
+  }
+]

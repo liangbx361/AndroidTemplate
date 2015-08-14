@@ -29,4 +29,9 @@
     <string name="ac_log_desc">生成日志文件</string>
     <string name="ac_screen_info">屏幕信息</string>
     <string name="ac_screen_info_desc">包含屏分辨率、状态栏高度、DPI等</string>
+    <string name="ac_navigation_drawer">导航抽屉模式</string>
+    <string name="ac_navigation_drawer_desc">Google官方出的导航抽屉模式,采用ToolBar和DrawerLayout实现</string>
+    
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
 </resources>

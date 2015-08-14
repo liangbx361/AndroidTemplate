@@ -4,5 +4,5 @@
     <color name="primary_dark">#3367d6</color>
     <color name="accent">#FF4081</color>
     <color name="textColorPrimary">@android:color/white</color>
-    <color name="textColorSecondary">@android:color/white</color>
+    <color name="textColor">#212121</color>
 </resources>
