@@ -1,4 +1,4 @@
-package com.common.androidtemplate.activity;
+package com.common.androidtemplate.module.layout;
 
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -15,7 +15,7 @@ import com.common.androidtemplate.R;
  * Author liangbx
  * Date 2015/8/14
  * Desc Google 官方推出的Navigation Drawer使用ToolBar和DrawerLayout 实现
- * 参考文章：
+ * 参考资料：
  *      http://blog.chengyunfeng.com/?p=493
  *      http://chenqichao.me/2014/12/08/108-Android-Toolbar-DrawerLayout-01/
  *      实现左右两个侧滑菜单

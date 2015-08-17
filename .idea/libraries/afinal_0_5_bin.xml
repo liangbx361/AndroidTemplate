@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="afinal_0.5_bin">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/src/main/java/libs/afinal_0.5_bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/src/main/libs/afinal_0.5_bin.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
