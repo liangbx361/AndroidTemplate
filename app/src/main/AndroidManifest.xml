@@ -150,9 +150,15 @@
             android:screenOrientation="portrait"/>
 
         <!-- 用Toolbar + DrawerLayout实现的菜单侧滑 -->
-        <activity android:name=".activity.NavigationDrawerActivity"
+        <activity android:name=".module.layout.NavigationDrawerActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/ac_navigation_drawer"
+            android:screenOrientation="portrait"/>
+
+        <!-- Facebook conceal -->
+        <activity android:name=".module.function.Conceal"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_conceal"
             android:screenOrientation="portrait"/>
 
     </application>

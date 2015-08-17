@@ -15,5 +15,10 @@
         <item name="android:textColor">@color/textColor</item>
         <!--返回键样式-->
         <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+
+    </style>
+
+    <style name="style_toolbar">
+        <item name="android:elevation">@dimen/toolbar_elevation</item>
     </style>
 </resources>

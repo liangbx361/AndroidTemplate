@@ -11,8 +11,8 @@
   },
   {
     "menuId": "3",
-    "menuName": "框架模板",
-    "moduleName": "framework"
+    "menuName": "功能组件模板",
+    "moduleName": "function"
   },
   {
     "menuId": "4",

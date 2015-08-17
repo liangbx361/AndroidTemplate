@@ -31,7 +31,10 @@
     <string name="ac_screen_info_desc">包含屏分辨率、状态栏高度、DPI等</string>
     <string name="ac_navigation_drawer">导航抽屉模式</string>
     <string name="ac_navigation_drawer_desc">Google官方出的导航抽屉模式,采用ToolBar和DrawerLayout实现</string>
+    <string name="ac_conceal">加密解密</string>
+    <string name="ac_conceal_desc">Facebook出品的开源加密解密库</string>
     
     <string name="open">打开</string>
     <string name="close">关闭</string>
+
 </resources>
