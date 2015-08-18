@@ -1,4 +1,4 @@
-package com.common.androidtemplate.net.volley;
+package com.common.androidtemplate.utils.volley;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.common.androidtemplate.barcode;
+package com.common.androidtemplate.utils.barcode;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

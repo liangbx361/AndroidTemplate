@@ -1,4 +1,4 @@
-package com.common.androidtemplate.main;
+package com.common.androidtemplate.module.main;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

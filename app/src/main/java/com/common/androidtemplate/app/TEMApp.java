@@ -7,12 +7,12 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.common.tools.exception.ExceptionLog;
-import com.common.androidtemplate.net.volley.VolleyX509TrustManager;
-import com.common.androidtemplate.net.volley.cache.VolleyImageCache;
+import com.common.androidtemplate.utils.volley.VolleyX509TrustManager;
+import com.common.androidtemplate.utils.volley.cache.VolleyImageCache;
 import com.common.androidtemplate.config.DbConfig;
 import com.common.androidtemplate.config.DebugConfig;
 import com.common.androidtemplate.config.NetConfig;
-import com.common.androidtemplate.datebase.DbUpdateHandler;
+import com.common.androidtemplate.utils.datebase.DbUpdateHandler;
 import android.app.Application;
 
 public class TEMApp extends Application {

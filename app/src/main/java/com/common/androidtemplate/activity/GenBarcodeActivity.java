@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseActivity;
 
-import com.common.androidtemplate.barcode.GenerateHelper;
+import com.common.androidtemplate.utils.barcode.GenerateHelper;
 import com.google.zxing.WriterException;
 
 public class GenBarcodeActivity extends BaseActivity {

@@ -1,4 +1,4 @@
-package com.common.androidtemplate.net.volley;
+package com.common.androidtemplate.utils.volley;
 
 import java.io.EOFException;
 import java.net.UnknownHostException;

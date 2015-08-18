@@ -1,8 +1,6 @@
 package com.common.androidtemplate.module.function;
 
 import android.os.Bundle;
-import android.os.Environment;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.common.androidtemplate.R;
@@ -38,23 +36,28 @@ import butterknife.OnClick;
  * https://facebook.github.io/conceal/
  * https://github.com/facebook/conceal
  */
-public class Conceal extends BaseBackActivity {
+public class ConcealActivity extends BaseBackActivity {
 
     private static final String SOURCE_FILE_PATH =
-            "/mnt/sdcard/Conceal/test.zip";
+            "/mnt/sdcard/ConcealActivity/test.zip";
     private static final String ENCRY_FILE_PATH =
-            "/mnt/sdcard/Conceal/test_encry.zip";
+            "/mnt/sdcard/ConcealActivity/test_encry.zip";
     private static final String DECRY_FILE_PATH =
-            "/mnt/sdcard/Conceal/test_decry.zip";
+            "/mnt/sdcard/ConcealActivity/test_decry.zip";
 
     @Bind(R.id.result)
     TextView resultTv;
+
+    private Crypto mCrypto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conceal);
         ButterKnife.bind(this);
+
+        mCrypto = new Crypto(new SharedPrefsBackedKeyChain(this),
+                new SystemNativeCryptoLibrary());
     }
 
     @Override
@@ -76,7 +79,7 @@ public class Conceal extends BaseBackActivity {
         Crypto crypto = new Crypto(new SharedPrefsBackedKeyChain(this),
                 new SystemNativeCryptoLibrary());
 
-        // Check for whether the crypto functionality is available
+        // Check for whether the mCrypto functionality is available
         // This might fail if Android does not load libaries correctly.
         if (!crypto.isAvailable()) {
             return;
@@ -119,6 +122,53 @@ public class Conceal extends BaseBackActivity {
         resultTv.setText(stringBuilder);
     }
 
+    /**
+     * 加密指定文件目录中的数据，生成解密后的数据
+     * @param srcDir 加密前的源文件目录
+     * @param encryDir 加密后放置的文件目录
+     */
+    private void doEncryptionFiles(String srcDir, String encryDir, Boolean delSrcDir) {
+        File srcFile = new File(srcDir);
+        if(!srcFile.exists()) {
+            return;
+        }
+
+        File encryFile = new File(encryDir);
+        if(!encryFile.exists()) {
+            encryFile.mkdirs();
+        }
+
+        if(!srcFile.isDirectory() && !encryFile.isDirectory()) {
+            return;
+        }
+
+        //遍历源文件目录，对相应文件进行加密
+        File[] files = srcFile.listFiles();
+
+    }
+
+    private void findEncryFile(File srcFile, File destFile, Boolean delSrcFile) {
+        if(!srcFile.exists()) {
+            return;
+        }
+        if(!destFile.exists()) {
+            destFile.mkdirs();
+        }
+        if(srcFile.isFile()) {
+
+        } else {
+            //此处可添加过滤器，对文件格式进行筛选
+            File[] files = srcFile.listFiles();
+            for(int i=0; i<files.length; i++) {
+                findEncryFile(files[i], destFile, delSrcFile);
+            }
+        }
+    }
+
+    private void doEncryFile(File srcFile, File destFile, Boolean delSrcFile) {
+
+    }
+
     @OnClick(R.id.decryption)
     void decryption() {
         long startTime = System.currentTimeMillis();
@@ -128,7 +178,7 @@ public class Conceal extends BaseBackActivity {
         Crypto crypto = new Crypto(new SharedPrefsBackedKeyChain(this),
                 new SystemNativeCryptoLibrary());
 
-        // Check for whether the crypto functionality is available
+        // Check for whether the mCrypto functionality is available
         // This might fail if Android does not load libaries correctly.
         if (!crypto.isAvailable()) {
             return;
@@ -176,7 +226,6 @@ public class Conceal extends BaseBackActivity {
         stringBuilder.append("解密时间：");
         stringBuilder.append(endTime - startTime);
         resultTv.setText(stringBuilder);
-
     }
 
     //获得指定文件的byte数组

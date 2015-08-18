@@ -44,7 +44,7 @@
         android:name=".app.TEMApp">
 
         <activity
-            android:name=".main.MainActivity"
+            android:name=".module.main.MainActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -80,7 +80,7 @@
 
         <!-- 新闻浏览 -->
         <activity
-            android:name=".activity.NewsReaderActivity"
+            android:name=".module.widget.NewsReaderActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/ac_news"
             android:screenOrientation="portrait" >
@@ -156,7 +156,7 @@
             android:screenOrientation="portrait"/>
 
         <!-- Facebook conceal -->
-        <activity android:name=".module.function.Conceal"
+        <activity android:name=".module.function.ConcealActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/ac_conceal"
             android:screenOrientation="portrait"/>

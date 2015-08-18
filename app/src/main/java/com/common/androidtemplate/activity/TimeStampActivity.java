@@ -16,7 +16,7 @@ import com.android.volley.VolleyError;
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseActivity;
 import com.common.androidtemplate.bean.TimeStamp;
-import com.common.androidtemplate.dialog.CusLoadingDialog;
+import com.common.androidtemplate.widget.dialog.CusLoadingDialog;
 import com.common.androidtemplate.task.TimeStampRequest;
 
 

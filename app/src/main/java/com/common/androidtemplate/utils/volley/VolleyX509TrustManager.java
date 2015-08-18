@@ -1,4 +1,4 @@
-package com.common.androidtemplate.net.volley;
+package com.common.androidtemplate.utils.volley;
 
 import java.security.KeyManagementException;  
 import java.security.NoSuchAlgorithmException;  

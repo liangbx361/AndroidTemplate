@@ -1,4 +1,4 @@
-package com.common.androidtemplate.net.volley.cache;
+package com.common.androidtemplate.utils.volley.cache;
 
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;

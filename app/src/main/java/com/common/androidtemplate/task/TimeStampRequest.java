@@ -9,7 +9,7 @@ import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.common.androidtemplate.bean.TimeStamp;
 import com.common.androidtemplate.config.DebugConfig;
-import com.common.androidtemplate.net.volley.ParamsRequest;
+import com.common.androidtemplate.utils.volley.ParamsRequest;
 import com.common.androidtemplate.parser.TimeStampParser;
 
 

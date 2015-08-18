@@ -1,4 +1,4 @@
-package com.common.androidtemplate.dialog;
+package com.common.androidtemplate.widget.dialog;
 
 import com.android.volley.Request;
 

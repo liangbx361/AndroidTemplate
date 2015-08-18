@@ -1,4 +1,4 @@
-package com.common.androidtemplate.datebase;
+package com.common.androidtemplate.utils.datebase;
 
 import net.tsz.afinal.FinalDb.DbUpdateListener;
 import android.database.sqlite.SQLiteDatabase;
