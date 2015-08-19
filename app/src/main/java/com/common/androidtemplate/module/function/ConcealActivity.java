@@ -1,6 +1,7 @@
 package com.common.androidtemplate.module.function;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.common.androidtemplate.R;
@@ -39,11 +40,11 @@ import butterknife.OnClick;
 public class ConcealActivity extends BaseBackActivity {
 
     private static final String SOURCE_FILE_PATH =
-            "/mnt/sdcard/ConcealActivity/test.zip";
+            "/mnt/sdcard/Conceal/test.zip";
     private static final String ENCRY_FILE_PATH =
-            "/mnt/sdcard/ConcealActivity/test_encry.zip";
+            "/mnt/sdcard/Conceal/test_encry.zip";
     private static final String DECRY_FILE_PATH =
-            "/mnt/sdcard/ConcealActivity/test_decry.zip";
+            "/mnt/sdcard/Conceal/test_decry.zip";
 
     @Bind(R.id.result)
     TextView resultTv;
@@ -58,6 +59,12 @@ public class ConcealActivity extends BaseBackActivity {
 
         mCrypto = new Crypto(new SharedPrefsBackedKeyChain(this),
                 new SystemNativeCryptoLibrary());
+
+        // Check for whether the mCrypto functionality is available
+        // This might fail if Android does not load libaries correctly.
+        if (!mCrypto.isAvailable()) {
+            Log.d("ConcealActivity", "加密不可用");
+        }
     }
 
     @Override
@@ -71,6 +78,20 @@ public class ConcealActivity extends BaseBackActivity {
     }
 
     @OnClick(R.id.encryption)
+    void doEncry() {
+        long startTime = System.currentTimeMillis();
+        doEncryptionFiles("/mnt/sdcard/Conceal/test", "/mnt/sdcard/Conceal/test1", false);
+        long endTime = System.currentTimeMillis();
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("文件大小：");
+        stringBuilder.append(FileSizeUtil.getAutoFileOrFilesSize("/mnt/sdcard/Conceal/test"));
+        stringBuilder.append("\n");
+        stringBuilder.append("加密时间：");
+        stringBuilder.append(endTime - startTime);
+        resultTv.setText(stringBuilder);
+    }
+
     void encryption() {
         long startTime = System.currentTimeMillis();
 
@@ -125,48 +146,87 @@ public class ConcealActivity extends BaseBackActivity {
     /**
      * 加密指定文件目录中的数据，生成解密后的数据
      * @param srcDir 加密前的源文件目录
-     * @param encryDir 加密后放置的文件目录
+     * @param destDir 加密后放置的文件目录
      */
-    private void doEncryptionFiles(String srcDir, String encryDir, Boolean delSrcDir) {
+    private void doEncryptionFiles(String srcDir, String destDir, Boolean delSrcDir) {
         File srcFile = new File(srcDir);
         if(!srcFile.exists()) {
             return;
         }
 
-        File encryFile = new File(encryDir);
-        if(!encryFile.exists()) {
-            encryFile.mkdirs();
+        File destFile = new File(destDir);
+        if(!destFile.exists()) {
+            destFile.mkdirs();
         }
 
-        if(!srcFile.isDirectory() && !encryFile.isDirectory()) {
+        if(!srcFile.isDirectory() && !destFile.isDirectory()) {
             return;
         }
 
-        //遍历源文件目录，对相应文件进行加密
-        File[] files = srcFile.listFiles();
-
+        findEncryFile(srcFile, destFile, delSrcDir);
     }
 
+    /**
+     *
+     * @param srcFile
+     * @param destFile
+     * @param delSrcFile
+     */
     private void findEncryFile(File srcFile, File destFile, Boolean delSrcFile) {
         if(!srcFile.exists()) {
             return;
         }
-        if(!destFile.exists()) {
+        if(srcFile.isDirectory() && !destFile.exists()) {
             destFile.mkdirs();
         }
         if(srcFile.isFile()) {
-
+            doEncryFile(srcFile, destFile, delSrcFile);
         } else {
             //此处可添加过滤器，对文件格式进行筛选
             File[] files = srcFile.listFiles();
             for(int i=0; i<files.length; i++) {
-                findEncryFile(files[i], destFile, delSrcFile);
+                File subDestFile = new File(destFile, files[i].getName());
+                findEncryFile(files[i], subDestFile, delSrcFile);
             }
         }
     }
 
+    /**
+     * 对单个文件进行加密处理
+     * @param srcFile
+     * @param destFile
+     * @param delSrcFile
+     */
     private void doEncryFile(File srcFile, File destFile, Boolean delSrcFile) {
+        if (!mCrypto.isAvailable()) {
+            return;
+        }
 
+        try {
+            OutputStream fileStream = new BufferedOutputStream(new FileOutputStream(destFile));
+            OutputStream outputStream = mCrypto.getCipherOutputStream(fileStream, new Entity("encry"));
+            if (outputStream != null) {
+                writeToStream(outputStream, srcFile);
+                outputStream.close();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void writeToStream(OutputStream outputStream, File srcFile) {
+        byte[] buffer = null;
+        try {
+            FileInputStream fis = new FileInputStream(srcFile);
+            byte[] b = new byte[1024];
+            int n;
+            while ((n = fis.read(b)) != -1) {
+                outputStream.write(b);
+            }
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @OnClick(R.id.decryption)

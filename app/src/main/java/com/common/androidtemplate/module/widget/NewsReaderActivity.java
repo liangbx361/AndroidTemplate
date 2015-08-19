@@ -15,6 +15,26 @@ import android.webkit.WebViewClient;
 
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseBackActivity;
+import com.common.tools.date.FormatDateTime;
+import com.common.tools.file.FileSizeUtil;
+import com.facebook.android.crypto.keychain.SharedPrefsBackedKeyChain;
+import com.facebook.crypto.Crypto;
+import com.facebook.crypto.Entity;
+import com.facebook.crypto.exception.CryptoInitializationException;
+import com.facebook.crypto.exception.KeyChainException;
+import com.facebook.crypto.util.SystemNativeCryptoLibrary;
+
+import net.tsz.afinal.utils.Utils;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Date;
 
 
 /**
@@ -24,7 +44,10 @@ import com.common.androidtemplate.activity.base.BaseBackActivity;
  */
 public class NewsReaderActivity extends BaseBackActivity {
 
+    public static final String TAG = "Webview_Decry";
+
     private WebView webView;
+    private File mTempFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +57,11 @@ public class NewsReaderActivity extends BaseBackActivity {
         getIntentData();
         initView();
         initWebView();
+
+        mTempFile = Utils.getDiskCacheDir(this, "webTemp");
+        if(!mTempFile.exists()) {
+            mTempFile.mkdirs();
+        }
     }
 
     @Override
@@ -46,7 +74,8 @@ public class NewsReaderActivity extends BaseBackActivity {
         webView = (WebView) findViewById(R.id.webview);
 //		webView.loadUrl("file:///android_asset/news/newspage.html");
 //		webView.loadUrl("http://www.163.com/");
-        webView.loadUrl("file:///mnt/sdcard/.MrBook/bookview_87111/index.html");
+//        webView.loadUrl("file:///mnt/sdcard/.MrBook/bookview_87111/index.html");
+        webView.loadUrl("file:///mnt/sdcard/Conceal/test1/index.html");
     }
 
     @SuppressWarnings("deprecation")
@@ -70,6 +99,32 @@ public class NewsReaderActivity extends BaseBackActivity {
             @Override
             public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
                 Log.d("webview_url", "shouldInterceptRequest=" + url);
+
+                String key = "file:///";
+
+//                if (url.contains(key)) {
+//                    String filePath = url.substring(key.length() - 1);
+//                    filePath = filePath.replace("test1", "test");
+//                    FileInputStream is = null;
+//                    try {
+//                        is = new FileInputStream(new File(filePath));
+//                        return new WebResourceResponse(getMimeType(url), "utf-8", is);
+//                    } catch (FileNotFoundException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+
+                if (url.contains(key)) {
+                    InputStream is = null;
+                    String filePath = url.substring(key.length() - 1);
+                    if (url.contains(".html") || url.contains(".png")) {
+                        is = decryFile(filePath, 0, null);
+                    } else {
+                        is = decryFile(filePath, 1, mTempFile);
+                    }
+                    return new WebResourceResponse(getMimeType(url), "utf-8", is);
+                }
+
                 WebResourceResponse response = super.shouldInterceptRequest(view, url);
                 return response;
             }
@@ -112,5 +167,104 @@ public class NewsReaderActivity extends BaseBackActivity {
         public String getContent() {
             return null;
         }
+    }
+
+    /**
+     * 解密html相关资料文件
+     * @param srcFilePath
+     * @param type 0:字节流 1:文件输入流
+     * @return
+     */
+    private InputStream decryFile(String srcFilePath, int type, File tempDirFile) {
+        long startTime = System.currentTimeMillis();
+
+        // Creates a new Crypto object with default implementations of
+        // a key chain as well as native library.
+        Crypto crypto = new Crypto(new SharedPrefsBackedKeyChain(this),
+                new SystemNativeCryptoLibrary());
+
+        // Check for whether the mCrypto functionality is available
+        // This might fail if Android does not load libaries correctly.
+        if (!crypto.isAvailable()) {
+            return null;
+        }
+
+        // Get the file to which ciphertext has been written.
+        FileInputStream fileStream = null;
+        try {
+            fileStream = new FileInputStream(new File(srcFilePath));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        // Creates an input stream which decrypts the data as
+        // it is read from it.
+        InputStream inputStream = null;
+        try {
+            inputStream = crypto.getCipherInputStream(fileStream, new Entity("encry"));
+//             Read into a byte array.
+            int read;
+            byte[] buffer = new byte[1024];
+
+            // You must read the entire stream to completion.
+            // The verification is done at the end of the stream.
+            // Thus not reading till the end of the stream will cause
+            // a security bug.
+            InputStream destInputStream;
+            if(type == 0) {
+                ByteArrayOutputStream bos = new ByteArrayOutputStream(1024);
+                while ((read = inputStream.read(buffer)) != -1) {
+                    bos.write(buffer);
+                }
+
+                inputStream.close();
+                bos.close();
+                destInputStream = new ByteArrayInputStream(bos.toByteArray());
+            } else {
+                File tempFile = new File(tempDirFile, System.currentTimeMillis()+".a");
+                FileOutputStream outputStream = new FileOutputStream(tempFile);
+                while ((read = inputStream.read(buffer)) != -1) {
+                    outputStream.write(buffer, 0, read);
+                }
+                outputStream.close();
+                destInputStream = new FileInputStream(tempFile);
+                inputStream.close();
+            }
+
+            return destInputStream;
+        } catch (IOException | CryptoInitializationException | KeyChainException e) {
+            e.printStackTrace();
+        }
+
+        long endTime = System.currentTimeMillis();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("文件大小：");
+        stringBuilder.append(FileSizeUtil.getAutoFileOrFilesSize(srcFilePath));
+        stringBuilder.append("\n");
+        stringBuilder.append("解密时间：");
+        stringBuilder.append(endTime - startTime);
+        Log.d(TAG, stringBuilder.toString());
+
+
+        return null;
+    }
+
+    private String getMimeType(String url) {
+        String mimeType = "*/*";
+        if(url.contains(".html")) {
+            mimeType = "text/html";
+        } else if(url.contains(".css")) {
+            mimeType = "text/css";
+        } else if(url.contains(".png")) {
+            mimeType = "image/webp";
+        } else if(url.contains(".jpg")) {
+            mimeType = "image/webp";
+        } else if(url.contains(".js")) {
+            mimeType = "text/javascript";
+        }
+
+        Log.d("webview_url", mimeType);
+
+        return mimeType;
     }
 }
