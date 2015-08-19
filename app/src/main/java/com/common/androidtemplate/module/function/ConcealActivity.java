@@ -28,7 +28,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-
 /**
  * Author liangbx
  * Date 2015/8/17.
@@ -40,11 +39,11 @@ import butterknife.OnClick;
 public class ConcealActivity extends BaseBackActivity {
 
     private static final String SOURCE_FILE_PATH =
-            "/mnt/sdcard/Conceal/test.zip";
+            "/mnt/sdcard/Conceal/test";
     private static final String ENCRY_FILE_PATH =
-            "/mnt/sdcard/Conceal/test_encry.zip";
+            "/mnt/sdcard/Conceal/test_encry";
     private static final String DECRY_FILE_PATH =
-            "/mnt/sdcard/Conceal/test_decry.zip";
+            "/mnt/sdcard/Conceal/test_decry";
 
     @Bind(R.id.result)
     TextView resultTv;
@@ -221,7 +220,7 @@ public class ConcealActivity extends BaseBackActivity {
             byte[] b = new byte[1024];
             int n;
             while ((n = fis.read(b)) != -1) {
-                outputStream.write(b);
+                outputStream.write(b, 0, n);
             }
             fis.close();
         } catch (IOException e) {

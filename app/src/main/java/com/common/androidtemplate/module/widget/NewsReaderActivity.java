@@ -102,31 +102,25 @@ public class NewsReaderActivity extends BaseBackActivity {
 
                 String key = "file:///";
 
-//                if (url.contains(key)) {
-//                    String filePath = url.substring(key.length() - 1);
-//                    filePath = filePath.replace("test1", "test");
-//                    FileInputStream is = null;
-//                    try {
-//                        is = new FileInputStream(new File(filePath));
-//                        return new WebResourceResponse(getMimeType(url), "utf-8", is);
-//                    } catch (FileNotFoundException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-
                 if (url.contains(key)) {
                     InputStream is = null;
                     String filePath = url.substring(key.length() - 1);
+                    int index = filePath.lastIndexOf("?");
+                    if (index != -1) {
+                        filePath = filePath.substring(0, index);
+                    }
                     if (url.contains(".html") || url.contains(".png")) {
                         is = decryFile(filePath, 0, null);
                     } else {
-                        is = decryFile(filePath, 1, mTempFile);
+//                        is = decryFile(filePath, 1, mTempFile);
+                        is = decryFile(filePath, 0, null);
                     }
-                    return new WebResourceResponse(getMimeType(url), "utf-8", is);
+                    if (is != null) {
+                        return new WebResourceResponse(getMimeType(url), "utf-8", is);
+                    }
                 }
 
-                WebResourceResponse response = super.shouldInterceptRequest(view, url);
-                return response;
+                return null;
             }
 
             @Override
@@ -176,6 +170,11 @@ public class NewsReaderActivity extends BaseBackActivity {
      * @return
      */
     private InputStream decryFile(String srcFilePath, int type, File tempDirFile) {
+        File srcFile = new File (srcFilePath);
+        if(!srcFile.exists() || !srcFile.isFile()) {
+            return null;
+        }
+
         long startTime = System.currentTimeMillis();
 
         // Creates a new Crypto object with default implementations of
@@ -214,7 +213,7 @@ public class NewsReaderActivity extends BaseBackActivity {
             if(type == 0) {
                 ByteArrayOutputStream bos = new ByteArrayOutputStream(1024);
                 while ((read = inputStream.read(buffer)) != -1) {
-                    bos.write(buffer);
+                    bos.write(buffer, 0, read);
                 }
 
                 inputStream.close();
@@ -244,7 +243,6 @@ public class NewsReaderActivity extends BaseBackActivity {
         stringBuilder.append("解密时间：");
         stringBuilder.append(endTime - startTime);
         Log.d(TAG, stringBuilder.toString());
-
 
         return null;
     }
