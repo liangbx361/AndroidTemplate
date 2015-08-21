@@ -1,8 +1,11 @@
 package com.common.androidtemplate.module.widget;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
@@ -34,7 +37,10 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -76,6 +82,7 @@ public class NewsReaderActivity extends BaseBackActivity {
 //		webView.loadUrl("http://www.163.com/");
 //        webView.loadUrl("file:///mnt/sdcard/.MrBook/bookview_87111/index.html");
         webView.loadUrl("file:///mnt/sdcard/Conceal/test1/index.html");
+//        webView.loadUrl("file:///mnt/sdcard/Conceal/test/index.html");
     }
 
     @SuppressWarnings("deprecation")
@@ -109,15 +116,15 @@ public class NewsReaderActivity extends BaseBackActivity {
                     if (index != -1) {
                         filePath = filePath.substring(0, index);
                     }
-                    if (url.contains(".html") || url.contains(".png")) {
-                        is = decryFile(filePath, 0, null);
-                    } else {
+                    if (url.contains(".mp4")) {
 //                        is = decryFile(filePath, 1, mTempFile);
+                    } else {
                         is = decryFile(filePath, 0, null);
                     }
                     if (is != null) {
                         return new WebResourceResponse(getMimeType(url), "utf-8", is);
                     }
+
                 }
 
                 return null;
@@ -152,6 +159,8 @@ public class NewsReaderActivity extends BaseBackActivity {
             public void onPageFinished(WebView view, String url) {
                 Log.d("webview_url", "onPageFinished=" + url);
             }
+
+
         });
     }
 
@@ -220,7 +229,7 @@ public class NewsReaderActivity extends BaseBackActivity {
                 bos.close();
                 destInputStream = new ByteArrayInputStream(bos.toByteArray());
             } else {
-                File tempFile = new File(tempDirFile, System.currentTimeMillis()+".a");
+                File tempFile = new File(tempDirFile, System.currentTimeMillis()+".mp4");
                 FileOutputStream outputStream = new FileOutputStream(tempFile);
                 while ((read = inputStream.read(buffer)) != -1) {
                     outputStream.write(buffer, 0, read);
@@ -230,19 +239,21 @@ public class NewsReaderActivity extends BaseBackActivity {
                 inputStream.close();
             }
 
+            long endTime = System.currentTimeMillis();
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append("文件大小：");
+            stringBuilder.append(FileSizeUtil.getAutoFileOrFilesSize(srcFilePath));
+            stringBuilder.append("\n");
+            stringBuilder.append("解密时间：");
+            stringBuilder.append(endTime - startTime);
+            Log.d(TAG, stringBuilder.toString());
+
             return destInputStream;
         } catch (IOException | CryptoInitializationException | KeyChainException e) {
             e.printStackTrace();
         }
 
-        long endTime = System.currentTimeMillis();
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("文件大小：");
-        stringBuilder.append(FileSizeUtil.getAutoFileOrFilesSize(srcFilePath));
-        stringBuilder.append("\n");
-        stringBuilder.append("解密时间：");
-        stringBuilder.append(endTime - startTime);
-        Log.d(TAG, stringBuilder.toString());
+
 
         return null;
     }
