@@ -7,5 +7,5 @@ package com.common.androidtemplate.bean;
 public class MenuItem {
     public String menuId;
     public String menuName;
-    public String moduleName;
+    public String menuDesc;
 }

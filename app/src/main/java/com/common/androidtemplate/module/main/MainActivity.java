@@ -73,13 +73,13 @@ public class MainActivity extends BaseActivity implements OnItemClickListener{
 		drawerToggle.syncState();
 		mDrawerLayout.setDrawerListener(drawerToggle);
 		ActionBar actionBar = getSupportActionBar();
-		getSupportActionBar().setTitle(mMenuList.get(0).menuName);
+		getSupportActionBar().setTitle(mMenuList.get(0).menuDesc);
 
 		//初始化菜单
 		ListView mMenuLv = (ListView) findViewById(R.id.left_drawer);
 		String[] menus = new String[mMenuList.size()];
 		for(int i=0; i<menus.length; i++) {
-			menus[i] = mMenuList.get(i).menuName;
+			menus[i] = mMenuList.get(i).menuDesc;
 		}
 		ArrayAdapter<String> menuAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, menus);
 		mMenuLv.setAdapter(menuAdapter);
@@ -87,7 +87,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener{
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				setCurrentData(position);
-				getSupportActionBar().setTitle(mMenuList.get(position).menuName);
+				getSupportActionBar().setTitle(mMenuList.get(position).menuDesc);
 				mDrawerLayout.closeDrawers();
 			}
 		});
@@ -99,7 +99,7 @@ public class MainActivity extends BaseActivity implements OnItemClickListener{
 
 	private void setCurrentData(int index) {
 		MenuItem menuItem = mMenuList.get(index);
-		List<Map<String, String>> dataList = getAcInfo(menuItem.moduleName);
+		List<Map<String, String>> dataList = getAcInfo(menuItem.menuName);
 		SimpleAdapter adapter = new SimpleAdapter(this, dataList,
 				android.R.layout.simple_list_item_2, new String[]{"name", "desc"},
 				new int[]{android.R.id.text1, android.R.id.text2});

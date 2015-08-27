@@ -1,22 +1,45 @@
 [
   {
     "menuId": "1",
-    "menuName": "布局模板",
-    "moduleName": "layout"
+    "menuName": "layout",
+    "menuDesc": "常用布局"
   },
   {
     "menuId": "2",
-    "menuName": "控件模板",
-    "moduleName": "widget"
+    "menuName": "widget",
+    "menuDesc": "动效组件"
   },
   {
     "menuId": "3",
-    "menuName": "功能组件模板",
-    "moduleName": "function"
+    "menuName": "module",
+    "menuDesc": "功能组件",
+    "subMenu":
+      [
+        {
+          "menuId": "31",
+          "menuName": "security",
+          "menuDesc": "安全组件"
+        },
+        {
+          "menuId": "32",
+          "menuName": "security",
+          "menuDesc": "数据存储组件"
+        },
+        {
+          "menuId": "33",
+          "menuName": "net",
+          "menuDesc": "网络组件"
+        },
+        {
+          "menuId": "34",
+          "menuName": "net",
+          "menuDesc": "网络相关组件"
+        }
+      ]
   },
   {
     "menuId": "4",
-    "menuName": "能力平台模板",
-    "moduleName": "platform"
+    "menuName": "platform",
+    "menuDesc": "能力平台"
   }
 ]

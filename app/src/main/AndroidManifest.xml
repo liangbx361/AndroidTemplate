@@ -161,6 +161,12 @@
             android:label="@string/ac_conceal"
             android:screenOrientation="portrait"/>
 
+        <!-- Facebook conceal -->
+        <activity android:name=".module.widget.DialogFragmentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_conceal"
+            android:screenOrientation="portrait"/>
+
     </application>
 
     <logback>

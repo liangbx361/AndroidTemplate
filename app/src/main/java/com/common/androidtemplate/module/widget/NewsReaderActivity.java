@@ -29,6 +29,8 @@ import com.facebook.crypto.util.SystemNativeCryptoLibrary;
 
 import net.tsz.afinal.utils.Utils;
 
+import org.json.JSONObject;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -252,8 +254,6 @@ public class NewsReaderActivity extends BaseBackActivity {
         } catch (IOException | CryptoInitializationException | KeyChainException e) {
             e.printStackTrace();
         }
-
-
 
         return null;
     }
