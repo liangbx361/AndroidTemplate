@@ -28,6 +28,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:support-v4:22.2.1'
     compile 'asia.ivity.android:drag-sort-listview:1.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta1'
     compile files('src/main/java/libs/afinal_0.5_bin.jar')
     compile files('src/main/java/libs/zxing_core_support_2.2_v1.0.jar')
     compile files('src/main/java/libs/gson-2.2.4.jar')

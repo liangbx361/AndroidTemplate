@@ -1,10 +1,5 @@
 package com.common.androidtemplate.main;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
@@ -19,6 +14,11 @@ import android.widget.SimpleAdapter;
 
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseActivity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends BaseActivity implements OnItemClickListener{
 	
@@ -57,8 +57,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener{
 	public void getAcInfo() {
 		try {
 			PackageInfo pi = getPackageManager().getPackageInfo(this.getPackageName(), PackageManager.GET_ACTIVITIES);
-			mActivityList = new ArrayList<ActivityInfo>();
-			mdataList = new ArrayList<Map<String,String>>();
+			mActivityList = new ArrayList<>();
+			mdataList = new ArrayList<>();
 			for(int i=0; i<pi.activities.length; i++) {
 				if(pi.activities[i].name.contains(".activity")) {
 					mActivityList.add(pi.activities[i]);
