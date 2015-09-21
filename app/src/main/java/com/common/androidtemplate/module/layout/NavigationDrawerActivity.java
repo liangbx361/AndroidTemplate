@@ -6,10 +6,14 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.PopupMenu;
 
 import com.common.androidtemplate.R;
+import com.common.androidtemplate.widget.TitlePopup;
 
 /**
  * Author liangbx
@@ -32,11 +36,16 @@ public class NavigationDrawerActivity extends AppCompatActivity {
     private ListView lvLeftMenu;
     private String[] lvs = {"List Item 01", "List Item 02", "List Item 03", "List Item 04"};
 
+    private ImageButton mBtnMenu;
+
+    private TitlePopup mTitlePopup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
         initViews();
+        initMenuData();
 
         //设置添加ToolBar
         setSupportActionBar(toolbar);
@@ -65,5 +74,35 @@ public class NavigationDrawerActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         lvLeftMenu = (ListView) findViewById(R.id.left_drawer);
+
+        mBtnMenu = (ImageButton) findViewById(R.id.cust_nav_menu);
+        mBtnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                mTitlePopup.show(v);
+                showPopuMenu();
+            }
+        });
+
+        mTitlePopup = new TitlePopup(this, getResources().getDimensionPixelSize(R.dimen.cust_nav_menu_width), ViewGroup.LayoutParams.WRAP_CONTENT,
+                R.layout.custom_navigation_menu);
     }
+
+    private void initMenuData() {
+        mTitlePopup.addAction(mTitlePopup.new ActionItem(this, "精品课程"));
+        mTitlePopup.addAction(mTitlePopup.new ActionItem(this, "课程"));
+        mTitlePopup.addAction(mTitlePopup.new ActionItem(this, "培训认证"));
+        mTitlePopup.addAction(mTitlePopup.new ActionItem(this, "职业规划"));
+    }
+
+    private void showMenu() {
+
+    }
+
+    private void showPopuMenu() {
+        PopupMenu popupMenu = new PopupMenu(this, mBtnMenu);
+        popupMenu.inflate(R.menu.ele_menu_study_index);
+        popupMenu.show();
+    }
+
 }

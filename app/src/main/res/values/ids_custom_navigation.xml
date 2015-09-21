@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cust_nav_name" type="id"/>
+    <item name="cust_nav_menu" type="id"/>
+    <item name="cust_nav_menu_item_icon" type="id"/>
+    <item name="cust_nav_menu_item_name" type="id"/>
+</resources>

@@ -16,6 +16,8 @@
         <!--返回键样式-->
         <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
 
+        <item name="android:popupMenuStyle">@style/custPopupMenuStyle</item>
+
     </style>
 
     <style name="style_toolbar">

@@ -3,4 +3,6 @@
     <dimen name="item_height">67dp</dimen>
     <dimen name="section_div_height">20dp</dimen>
     <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="cust_nav_menu_width">120dp</dimen>
 </resources>

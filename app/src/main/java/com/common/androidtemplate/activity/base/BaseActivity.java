@@ -1,6 +1,7 @@
 package com.common.androidtemplate.activity.base;
 
 import android.app.ProgressDialog;
+import android.os.Bundle;
 import android.view.View.OnClickListener;
 
 /**
@@ -12,17 +13,18 @@ import android.view.View.OnClickListener;
 public abstract class BaseActivity extends BaseNetActivity {
 	
 	private ProgressDialog pDialog;
-	
-	/**
-	 * 获取Intent数据
-	 */
-	public abstract void getIntentData();
 
-	/**
-	 * 初始化控件
-	 */
-	public abstract void initView();
-	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		getIntentData();
+		initView();
+	}
+
+	public void setContentview(int layoutId) {
+
+	}
+
 	@Override
 	protected void onResume() {
 		super.onResume();
@@ -48,4 +50,14 @@ public abstract class BaseActivity extends BaseNetActivity {
 	public void setViewOnClick(int id, OnClickListener listener) {
 		findViewById(id).setOnClickListener(listener);
 	}
+
+	/**
+	 * 获取Intent数据
+	 */
+	public abstract void getIntentData();
+
+	/**
+	 * 初始化控件
+	 */
+	public abstract void initView();
 }

@@ -6,6 +6,8 @@
         <item name="colorAccent">@color/accent</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+
+        <item name="android:popupMenuStyle">@style/custPopupMenuStyle</item>
     </style>
 
     <!-- 定制抽屉箭头的样式 -->

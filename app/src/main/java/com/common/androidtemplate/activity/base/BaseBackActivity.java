@@ -12,8 +12,6 @@ public abstract class BaseBackActivity extends BaseActivity {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-//		setDisplayHomeAsUpEnabled(true);
-		
 		return super.onCreateOptionsMenu(menu);
 	}
 }

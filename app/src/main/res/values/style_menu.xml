@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="custPopupMenuStyle" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/night_biz_read_no_interest_popup_bg</item>
+    </style>
+</resources>

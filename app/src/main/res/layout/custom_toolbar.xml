@@ -10,4 +10,7 @@
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
     app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
+    <include
+        layout="@layout/custom_navigation"/>
+
 </android.support.v7.widget.Toolbar>

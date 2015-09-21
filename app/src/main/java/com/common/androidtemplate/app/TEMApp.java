@@ -1,19 +1,20 @@
 package com.common.androidtemplate.app;
 
-import net.tsz.afinal.FinalDb;
-import net.tsz.afinal.utils.Utils;
+import android.app.Application;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.common.tools.exception.ExceptionLog;
-import com.common.androidtemplate.utils.volley.VolleyX509TrustManager;
-import com.common.androidtemplate.utils.volley.cache.VolleyImageCache;
 import com.common.androidtemplate.config.DbConfig;
 import com.common.androidtemplate.config.DebugConfig;
 import com.common.androidtemplate.config.NetConfig;
 import com.common.androidtemplate.utils.datebase.DbUpdateHandler;
-import android.app.Application;
+import com.common.androidtemplate.utils.volley.VolleyX509TrustManager;
+import com.common.androidtemplate.utils.volley.cache.VolleyImageCache;
+import com.common.tools.exception.ExceptionLog;
+
+import net.tsz.afinal.FinalDb;
+import net.tsz.afinal.utils.Utils;
 
 public class TEMApp extends Application {
 
@@ -56,6 +57,15 @@ public class TEMApp extends Application {
 		
 		exLog = ExceptionLog.getInstance();  
 		exLog.init(getApplicationContext());
+
+		//ActiveAndroid 初始化
+//		ActiveAndroid.initialize(this);
+	}
+
+	@Override
+	public void onTerminate() {
+		super.onTerminate();
+//		ActiveAndroid.dispose();
 	}
 
 	/**

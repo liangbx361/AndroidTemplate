@@ -56,7 +56,9 @@ public class MainActivity extends BaseActivity implements OnItemClickListener{
 	@Override
 	public void initView() {
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-		setSupportActionBar(toolbar);
+		if (toolbar != null) {
+			setSupportActionBar(toolbar);
+		}
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		//创建返回键，并实现打开关/闭监听
 		ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.open, R.string.close) {
