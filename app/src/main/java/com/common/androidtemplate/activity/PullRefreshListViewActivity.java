@@ -1,7 +1,5 @@
 package com.common.androidtemplate.activity;
 
-import java.util.ArrayList;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
@@ -26,6 +24,8 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleLis
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 
+import java.util.ArrayList;
+
 /**
  * 
  * @描述：
@@ -34,7 +34,7 @@ import com.handmark.pulltorefresh.library.PullToRefreshListView;
  */
 public class PullRefreshListViewActivity extends BaseActivity implements OnItemClickListener,
 	OnItemLongClickListener{
-	
+
 	//下拉刷新
 	private PullToRefreshListView mPullListView;
 	private ListView mListView;
@@ -49,17 +49,17 @@ public class PullRefreshListViewActivity extends BaseActivity implements OnItemC
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_pull_refresh);
-		
-		getIntentData();
-		initView();
-		
 		test(pageInfo.pageNo);		
 	}
 	
 	@Override
 	public void getIntentData() {
 		
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_pull_refresh;
 	}
 
 	@Override

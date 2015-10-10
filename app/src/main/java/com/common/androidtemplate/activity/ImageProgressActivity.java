@@ -1,6 +1,5 @@
 package com.common.androidtemplate.activity;
 
-import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -20,19 +19,15 @@ public class ImageProgressActivity extends BaseBackActivity implements DownloadP
 	private NetworkImageView imgIv;
 	private RoundProgressBar progressBar;
 	private Button startBtn;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_image_progress);
-		
-		getIntentData();
-		initView();
-	}
-	
+
 	@Override
 	public void getIntentData() {
 		
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_image_progress;
 	}
 
 	@Override

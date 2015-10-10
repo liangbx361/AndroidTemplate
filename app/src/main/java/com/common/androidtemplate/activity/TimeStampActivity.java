@@ -1,10 +1,6 @@
 package com.common.androidtemplate.activity;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import android.app.Dialog;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,8 +12,11 @@ import com.android.volley.VolleyError;
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseActivity;
 import com.common.androidtemplate.bean.TimeStamp;
-import com.common.androidtemplate.widget.dialog.CusLoadingDialog;
 import com.common.androidtemplate.task.TimeStampRequest;
+import com.common.androidtemplate.widget.dialog.CusLoadingDialog;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class TimeStampActivity extends BaseActivity implements Listener<TimeStamp>, ErrorListener{
@@ -25,21 +24,17 @@ public class TimeStampActivity extends BaseActivity implements Listener<TimeStam
 	private TimeStampRequest mTimeStampRequest;
 	private TimeStamp mTimeStamp;
 	private Dialog pDialog;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_timestamp);
-		
-		getIntentData();
-		initView();				
-	}
-			
+
 	@Override
 	public void getIntentData() {
 		
 	}
-	
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_timestamp;
+	}
+
 	@Override
 	public void initView() {
 		

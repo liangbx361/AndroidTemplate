@@ -1,8 +1,5 @@
 package com.common.androidtemplate.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -17,6 +14,9 @@ import com.mobeta.android.dslv.DragSortController;
 import com.mobeta.android.dslv.DragSortListView;
 import com.mobeta.android.dslv.DragSortListView.DropListener;
 import com.mobeta.android.dslv.DragSortListView.RemoveListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 
@@ -34,16 +34,17 @@ public class DragSortListViewActivity extends BaseActivity implements DropListen
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_dslv);
-		
-		getIntentData();
-		initView();
 		test();
 	}
 	
 	@Override
 	public void getIntentData() {
 		
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_dslv;
 	}
 
 	@Override

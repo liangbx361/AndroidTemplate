@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -40,19 +39,15 @@ public class MainActivity extends BaseActivity implements OnItemClickListener{
 	private List<ActivityInfo> mActivityList;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-
-		parserMenuData();
-		initView();
-	}
-	
-	@Override
 	public void getIntentData() {
-		
+		parserMenuData();
 	}
-	
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_main;
+	}
+
 	@Override
 	public void initView() {
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

@@ -36,6 +36,11 @@ public class LogActivity extends BaseBackActivity {
 	}
 
 	@Override
+	public int getLayoutId() {
+		return 0;
+	}
+
+	@Override
 	public void initView() {
 		
 	}

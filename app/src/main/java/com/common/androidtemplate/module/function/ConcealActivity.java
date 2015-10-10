@@ -25,7 +25,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -53,8 +52,6 @@ public class ConcealActivity extends BaseBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conceal);
-        ButterKnife.bind(this);
 
         mCrypto = new Crypto(new SharedPrefsBackedKeyChain(this),
                 new SystemNativeCryptoLibrary());
@@ -69,6 +66,11 @@ public class ConcealActivity extends BaseBackActivity {
     @Override
     public void getIntentData() {
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_conceal;
     }
 
     @Override

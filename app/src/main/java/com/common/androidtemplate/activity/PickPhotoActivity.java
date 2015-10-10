@@ -1,14 +1,5 @@
 package com.common.androidtemplate.activity;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-
-import net.tsz.afinal.FinalHttp;
-import net.tsz.afinal.http.AjaxCallBack;
-import net.tsz.afinal.http.AjaxParams;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -25,11 +16,15 @@ import android.widget.GridView;
 
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseBackActivity;
-import com.common.tools.file.FileDirUtil;
-import com.common.tools.media.CameraHelper;
 import com.common.androidtemplate.adapter.PhotoAdapter;
 import com.common.androidtemplate.config.AcResultCode;
+import com.common.tools.file.FileDirUtil;
+import com.common.tools.media.CameraHelper;
 import com.common.tools.widget.ToastHelper;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 
@@ -58,16 +53,18 @@ public class PickPhotoActivity extends BaseBackActivity implements OnClickListen
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_pick_photo);
-		
-		getIntentData();
-		initView();
+
 		cameraHelper = new CameraHelper(this);		
 	}
 	
 	@Override
 	public void getIntentData() {
 		
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_pick_photo;
 	}
 
 	@Override

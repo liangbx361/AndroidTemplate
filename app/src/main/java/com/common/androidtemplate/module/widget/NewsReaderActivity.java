@@ -1,11 +1,8 @@
 package com.common.androidtemplate.module.widget;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
@@ -18,7 +15,6 @@ import android.webkit.WebViewClient;
 
 import com.common.androidtemplate.R;
 import com.common.androidtemplate.activity.base.BaseBackActivity;
-import com.common.tools.date.FormatDateTime;
 import com.common.tools.file.FileSizeUtil;
 import com.facebook.android.crypto.keychain.SharedPrefsBackedKeyChain;
 import com.facebook.crypto.Crypto;
@@ -29,8 +25,6 @@ import com.facebook.crypto.util.SystemNativeCryptoLibrary;
 
 import net.tsz.afinal.utils.Utils;
 
-import org.json.JSONObject;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -39,10 +33,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Field;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 
 /**
@@ -60,10 +50,6 @@ public class NewsReaderActivity extends BaseBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
-
-        getIntentData();
-        initView();
         initWebView();
 
         mTempFile = Utils.getDiskCacheDir(this, "webTemp");
@@ -75,6 +61,11 @@ public class NewsReaderActivity extends BaseBackActivity {
     @Override
     public void getIntentData() {
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_news;
     }
 
     @Override

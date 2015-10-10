@@ -21,93 +21,93 @@ import java.util.ArrayList;
 
 /**
  * @author yangyu
- *	¹¦ÄÜÃèÊö£º±êÌâ°´Å¥ÉÏµÄµ¯´°£¨¼Ì³Ğ×ÔPopupWindow£©
+ * åŠŸèƒ½æè¿°ï¼šæ ‡é¢˜æŒ‰é’®ä¸Šçš„å¼¹çª—ï¼ˆç»§æ‰¿è‡ªPopupWindowï¼‰
  */
 public class TitlePopup extends PopupWindow {
 	private Context mContext;
 
-	//ÁĞ±íµ¯´°µÄ¼ä¸ô
+	//åˆ—è¡¨å¼¹çª—çš„é—´éš”
 	protected final int LIST_PADDING = 10;
 
-	//ÊµÀı»¯Ò»¸ö¾ØĞÎ
+	//å®ä¾‹åŒ–ä¸€ä¸ªçŸ©å½¢
 	private Rect mRect = new Rect();
 
-	//×ø±êµÄÎ»ÖÃ£¨x¡¢y£©
+	//åæ ‡çš„ä½ç½®ï¼ˆxã€yï¼‰
 	private final int[] mLocation = new int[2];
 
-	//ÆÁÄ»µÄ¿í¶ÈºÍ¸ß¶È
+	//å±å¹•çš„å®½åº¦å’Œé«˜åº¦
 	private int mScreenWidth,mScreenHeight;
 
-	//ÅĞ¶ÏÊÇ·ñĞèÒªÌí¼Ó»ò¸üĞÂÁĞ±í×ÓÀàÏî
+	//åˆ¤æ–­æ˜¯å¦éœ€è¦æ·»åŠ æˆ–æ›´æ–°åˆ—è¡¨å­ç±»é¡¹
 	private boolean mIsDirty;
-	
-	//Î»ÖÃ²»ÔÚÖĞĞÄ
+
+	//ä½ç½®ä¸åœ¨ä¸­å¿ƒ
 	private int popupGravity = Gravity.CENTER;
-	
-	//µ¯´°×ÓÀàÏîÑ¡ÖĞÊ±µÄ¼àÌı
+
+	//å¼¹çª—å­ç±»é¡¹é€‰ä¸­æ—¶çš„ç›‘å¬
 	private OnItemOnClickListener mItemOnClickListener;
-	
-	//¶¨ÒåÁĞ±í¶ÔÏó
+
+	//å®šä¹‰åˆ—è¡¨å¯¹è±¡
 	private ListView mListView;
-	
-	//¶¨Òåµ¯´°×ÓÀàÏîÁĞ±í
-	private ArrayList<ActionItem> mActionItems = new ArrayList<ActionItem>();			
+
+	//å®šä¹‰å¼¹çª—å­ç±»é¡¹åˆ—è¡¨
+	private ArrayList<ActionItem> mActionItems = new ArrayList<ActionItem>();
 
 	public TitlePopup(Context context, int width, int height, int layoutId){
 		this.mContext = context;
-		
-		//ÉèÖÃ¿ÉÒÔ»ñµÃ½¹µã
+
+		//è®¾ç½®å¯ä»¥è·å¾—ç„¦ç‚¹
 		setFocusable(true);
-		//ÉèÖÃµ¯´°ÄÚ¿Éµã»÷
-		setTouchable(true);	
-		//ÉèÖÃµ¯´°Íâ¿Éµã»÷
+		//è®¾ç½®å¼¹çª—å†…å¯ç‚¹å‡»
+		setTouchable(true);
+		//è®¾ç½®å¼¹çª—å¤–å¯ç‚¹å‡»
 		setOutsideTouchable(true);
-		
-		//»ñµÃÆÁÄ»µÄ¿í¶ÈºÍ¸ß¶È
+
+		//è·å¾—å±å¹•çš„å®½åº¦å’Œé«˜åº¦
 		mScreenWidth = context.getResources().getDisplayMetrics().widthPixels;
 		mScreenHeight = context.getResources().getDisplayMetrics().heightPixels;
-		
-		//ÉèÖÃµ¯´°µÄ¿í¶ÈºÍ¸ß¶È
+
+		//è®¾ç½®å¼¹çª—çš„å®½åº¦å’Œé«˜åº¦
 		setWidth(width);
 		setHeight(height);
-		
+
 		setBackgroundDrawable(new BitmapDrawable());
-		
-		//ÉèÖÃµ¯´°µÄ²¼¾Ö½çÃæ
+
+		//è®¾ç½®å¼¹çª—çš„å¸ƒå±€ç•Œé¢
 		setContentView(LayoutInflater.from(mContext).inflate(layoutId, null));
-		
+
 		initUI();
 	}
-		
+
 	/**
-	 * ³õÊ¼»¯µ¯´°ÁĞ±í
+	 * åˆå§‹åŒ–å¼¹çª—åˆ—è¡¨
 	 */
 	private void initUI(){
 		mListView = (ListView) getContentView().findViewById(R.id.title_list);
-		
+
 		mListView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int index, long arg3) {
-				//µã»÷×ÓÀàÏîºó£¬µ¯´°ÏûÊ§
+				//ç‚¹å‡»å­ç±»é¡¹åï¼Œå¼¹çª—æ¶ˆå¤±
 				dismiss();
 
 				if (mItemOnClickListener != null)
 					mItemOnClickListener.onItemClick(mActionItems.get(index), index);
 			}
-		}); 
+		});
 	}
-	
+
 	/**
-	 * ÏÔÊ¾µ¯´°ÁĞ±í½çÃæ
+	 * æ˜¾ç¤ºå¼¹çª—åˆ—è¡¨ç•Œé¢
 	 */
 	public void show(View view){
-		//»ñµÃµã»÷ÆÁÄ»µÄÎ»ÖÃ×ø±ê
+		//è·å¾—ç‚¹å‡»å±å¹•çš„ä½ç½®åæ ‡
 //		view.getLocationOnScreen(mLocation);
-		
-		//ÉèÖÃ¾ØĞÎµÄ´óĞ¡
+
+		//è®¾ç½®çŸ©å½¢çš„å¤§å°
 //		mRect.set(mLocation[0], mLocation[1], mLocation[0] + view.getWidth(),mLocation[1] + view.getHeight());
-		
-		//ÅĞ¶ÏÊÇ·ñĞèÒªÌí¼Ó»ò¸üĞÂÁĞ±í×ÓÀàÏî
+
+		//åˆ¤æ–­æ˜¯å¦éœ€è¦æ·»åŠ æˆ–æ›´æ–°åˆ—è¡¨å­ç±»é¡¹
 		if(mIsDirty){
 			populateActions();
 		}
@@ -116,70 +116,70 @@ public class TitlePopup extends PopupWindow {
 		showAsDropDown(view, xoff, 0);
 
 
-		//ÏÔÊ¾µ¯´°µÄÎ»ÖÃ
+		//æ˜¾ç¤ºå¼¹çª—çš„ä½ç½®
 //		showAtLocation(view, popupGravity, mScreenWidth - LIST_PADDING - (getWidth() / 2), mRect.bottom);
 	}
-	
+
 	/**
-	 * ÉèÖÃµ¯´°ÁĞ±í×ÓÏî
+	 * è®¾ç½®å¼¹çª—åˆ—è¡¨å­é¡¹
 	 */
 	private void populateActions(){
 		mIsDirty = false;
-		
-		//ÉèÖÃÁĞ±íµÄÊÊÅäÆ÷
-		mListView.setAdapter(new BaseAdapter() {			
+
+		//è®¾ç½®åˆ—è¡¨çš„é€‚é…å™¨
+		mListView.setAdapter(new BaseAdapter() {
 			@Override
 			public View getView(int position, View convertView, ViewGroup parent) {
 				TextView textView = null;
-				
+
 				if(convertView == null){
 					textView = new TextView(mContext);
 					textView.setTextColor(mContext.getResources().getColor(android.R.color.white));
 					textView.setTextSize(14);
-					//ÉèÖÃÎÄ±¾¾ÓÖĞ
+					//è®¾ç½®æ–‡æœ¬å±…ä¸­
 					textView.setGravity(Gravity.CENTER);
-					//ÉèÖÃÎÄ±¾ÓòµÄ·¶Î§
+					//è®¾ç½®æ–‡æœ¬åŸŸçš„èŒƒå›´
 					textView.setPadding(0, 10, 0, 10);
-					//ÉèÖÃÎÄ±¾ÔÚÒ»ĞĞÄÚÏÔÊ¾£¨²»»»ĞĞ£©
+					//è®¾ç½®æ–‡æœ¬åœ¨ä¸€è¡Œå†…æ˜¾ç¤ºï¼ˆä¸æ¢è¡Œï¼‰
 					textView.setSingleLine(true);
 				}else{
 					textView = (TextView) convertView;
 				}
-				
+
 				ActionItem item = mActionItems.get(position);
-				
-				//ÉèÖÃÎÄ±¾ÎÄ×Ö
+
+				//è®¾ç½®æ–‡æœ¬æ–‡å­—
 				textView.setText(item.mTitle);
-				//ÉèÖÃÎÄ×ÖÓëÍ¼±êµÄ¼ä¸ô
+				//è®¾ç½®æ–‡å­—ä¸å›¾æ ‡çš„é—´éš”
 				textView.setCompoundDrawablePadding(10);
 
 				if(null != item.mDrawable) {
-					//ÉèÖÃÔÚÎÄ×ÖµÄ×ó±ß·ÅÒ»¸öÍ¼±ê
+					//è®¾ç½®åœ¨æ–‡å­—çš„å·¦è¾¹æ”¾ä¸€ä¸ªå›¾æ ‡
 					textView.setCompoundDrawablesWithIntrinsicBounds(item.mDrawable, null, null, null);
 				}
-				
-                return textView;
+
+				return textView;
 			}
-			
+
 			@Override
 			public long getItemId(int position) {
 				return position;
 			}
-			
+
 			@Override
 			public Object getItem(int position) {
 				return mActionItems.get(position);
 			}
-			
+
 			@Override
 			public int getCount() {
 				return mActionItems.size();
 			}
 		}) ;
 	}
-	
+
 	/**
-	 * Ìí¼Ó×ÓÀàÏî
+	 * æ·»åŠ å­ç±»é¡¹
 	 */
 	public void addAction(ActionItem action){
 		if(action != null){
@@ -187,9 +187,9 @@ public class TitlePopup extends PopupWindow {
 			mIsDirty = true;
 		}
 	}
-	
+
 	/**
-	 * Çå³ı×ÓÀàÏî
+	 * æ¸…é™¤å­ç±»é¡¹
 	 */
 	public void cleanAction(){
 		if(mActionItems.isEmpty()){
@@ -197,26 +197,26 @@ public class TitlePopup extends PopupWindow {
 			mIsDirty = true;
 		}
 	}
-	
+
 	/**
-	 * ¸ù¾İÎ»ÖÃµÃµ½×ÓÀàÏî
+	 * æ ¹æ®ä½ç½®å¾—åˆ°å­ç±»é¡¹
 	 */
 	public ActionItem getAction(int position){
 		if(position < 0 || position > mActionItems.size())
 			return null;
 		return mActionItems.get(position);
-	}			
-	
+	}
+
 	/**
-	 * ÉèÖÃ¼àÌıÊÂ¼ş
+	 * è®¾ç½®ç›‘å¬äº‹ä»¶
 	 */
 	public void setItemOnClickListener(OnItemOnClickListener onItemOnClickListener){
 		this.mItemOnClickListener = onItemOnClickListener;
 	}
-	
+
 	/**
 	 * @author yangyu
-	 *	¹¦ÄÜÃèÊö£ºµ¯´°×ÓÀàÏî°´Å¥¼àÌıÊÂ¼ş
+	 *	åŠŸèƒ½æè¿°ï¼šå¼¹çª—å­ç±»é¡¹æŒ‰é’®ç›‘å¬äº‹ä»¶
 	 */
 	public static interface OnItemOnClickListener{
 		public void onItemClick(ActionItem item, int position);
@@ -224,12 +224,12 @@ public class TitlePopup extends PopupWindow {
 
 	/**
 	 * @author yangyu
-	 *	¹¦ÄÜÃèÊö£ºµ¯´°ÄÚ²¿×ÓÀàÏî£¨»æÖÆ±êÌâºÍÍ¼±ê£©
+	 *	åŠŸèƒ½æè¿°ï¼šå¼¹çª—å†…éƒ¨å­ç±»é¡¹ï¼ˆç»˜åˆ¶æ ‡é¢˜å’Œå›¾æ ‡ï¼‰
 	 */
 	public class ActionItem {
-		//¶¨ÒåÍ¼Æ¬¶ÔÏó
+		//å®šä¹‰å›¾ç‰‡å¯¹è±¡
 		public Drawable mDrawable;
-		//¶¨ÒåÎÄ±¾¶ÔÏó
+		//å®šä¹‰æ–‡æœ¬å¯¹è±¡
 		public CharSequence mTitle;
 
 		public ActionItem(Drawable drawable, CharSequence title){

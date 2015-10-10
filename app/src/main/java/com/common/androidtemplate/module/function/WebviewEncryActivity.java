@@ -29,16 +29,17 @@ public class WebviewEncryActivity extends BaseBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
-
-        getIntentData();
-        initView();
         initWebView();
     }
 
     @Override
     public void getIntentData() {
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_news;
     }
 
     @Override

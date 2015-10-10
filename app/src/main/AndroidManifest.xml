@@ -50,6 +50,11 @@
             android:name=".module.main.MainActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <!-- 可拖动排序滑动删除的列表模板 -->
@@ -142,11 +147,6 @@
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/ac_navigation_drawer"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- Facebook conceal -->

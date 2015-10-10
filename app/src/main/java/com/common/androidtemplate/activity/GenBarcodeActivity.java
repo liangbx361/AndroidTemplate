@@ -20,16 +20,17 @@ public class GenBarcodeActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_gen_barcode);
-		
-		getIntentData();
-		initView();
 	}
 	
 	@Override
 	public void getIntentData() {
 
 		
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_gen_barcode;
 	}
 
 	@Override

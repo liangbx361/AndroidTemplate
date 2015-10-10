@@ -1,7 +1,6 @@
 package com.common.androidtemplate.activity;
 
 import android.graphics.Rect;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.DisplayMetrics;
@@ -22,19 +21,15 @@ public class ScreenInofActivity extends BaseBackActivity {
 	private TextView resolutionRatioTv;
 	private TextView statusbarHeightTv;
 	private TextView dpiTv;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState){
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_screen_info);
-		
-		getIntentData();
-		initView();
-	}
 
 	@Override
 	public void getIntentData() {
 		
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_screen_info;
 	}
 
 	@Override

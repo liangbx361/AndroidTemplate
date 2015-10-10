@@ -4,6 +4,8 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View.OnClickListener;
 
+import butterknife.ButterKnife;
+
 /**
  * Activity基类
  * 
@@ -18,6 +20,8 @@ public abstract class BaseActivity extends BaseNetActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		getIntentData();
+		setContentView(getLayoutId());
+		ButterKnife.bind(this);
 		initView();
 	}
 
@@ -55,6 +59,12 @@ public abstract class BaseActivity extends BaseNetActivity {
 	 * 获取Intent数据
 	 */
 	public abstract void getIntentData();
+
+	/**
+	 * 设置布局
+	 * @return
+	 */
+	public abstract int getLayoutId();
 
 	/**
 	 * 初始化控件

@@ -10,7 +10,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -40,19 +39,15 @@ public class SignatureActivity extends BaseBackActivity implements OnClickListen
 	private View signView;
 	private ImageView signIv;
 	private Dialog signDialog;
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_signature);
-		
-		getIntentData();
-		initView();
-	}
 
 	@Override
 	public void getIntentData() {
 
+	}
+
+	@Override
+	public int getLayoutId() {
+		return R.layout.activity_signature;
 	}
 
 	@Override
