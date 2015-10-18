@@ -28,6 +28,8 @@ public class LogActivity extends BaseBackActivity {
 			j++;
 		}
 		log.info(j+"");
+
+
 	}
 
 	@Override

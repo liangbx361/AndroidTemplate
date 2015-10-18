@@ -33,6 +33,8 @@
     <string name="ac_navigation_drawer_desc">Google官方出的导航抽屉模式,采用ToolBar和DrawerLayout实现</string>
     <string name="ac_conceal">Conceal加密解密</string>
     <string name="ac_conceal_desc">Facebook出品的开源加密解密库</string>
+    <string name="ac_brightness">系统亮度</string>
+    <string name="ac_brightness_desc">系统亮度设置，提供模式切换，来查看亮度值的变化</string>
     
     <string name="open">打开</string>
     <string name="close">关闭</string>

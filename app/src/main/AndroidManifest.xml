@@ -164,6 +164,14 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <!--  -->
+        <activity
+            android:name=".module.function.system.BrightnessActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_brightness"
+            android:screenOrientation="portrait">
+        </activity>
+
         <!-- ActiveAndroid 数据库配置  -->
         <meta-data
             android:name="AA_DB_NAME"

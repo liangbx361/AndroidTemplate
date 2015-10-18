@@ -11,7 +11,7 @@
   },
   {
     "menuId": "3",
-    "menuName": "module",
+    "menuName": "function",
     "menuDesc": "功能组件",
     "subMenu":
       [
@@ -34,6 +34,11 @@
           "menuId": "34",
           "menuName": "net",
           "menuDesc": "网络相关组件"
+        },
+        {
+          "menuId": "35",
+          "menuName": "system",
+          "menuDesc": "系统功能"
         }
       ]
   },
