@@ -172,6 +172,38 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <!--  -->
+        <activity
+            android:name=".module.function.net.DnsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_dns"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name=".module.function.RxJavaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_rx_java"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name=".module.function.system.SystemInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_system_info"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name=".module.function.JacksonActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/ac_jackson"
+            android:screenOrientation="portrait">
+        </activity>
+
         <!-- ActiveAndroid 数据库配置  -->
         <meta-data
             android:name="AA_DB_NAME"

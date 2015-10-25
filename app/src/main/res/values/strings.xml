@@ -35,6 +35,14 @@
     <string name="ac_conceal_desc">Facebook出品的开源加密解密库</string>
     <string name="ac_brightness">系统亮度</string>
     <string name="ac_brightness_desc">系统亮度设置，提供模式切换，来查看亮度值的变化</string>
+    <string name="ac_dns">获取当前的DNS信息</string>
+    <string name="ac_dns_desc">通过蓝讯接口获取</string>
+    <string name="ac_rx_java">RxJava 示例</string>
+    <string name="ac_rx_java_desc">实践RxJava的使用方式</string>
+    <string name="ac_system_info">获取系统信息</string>
+    <string name="ac_system_info_desc">获取系统信息，如内存信息，CPU使用率等</string>
+    <string name="ac_jackson">jackson</string>
+    <string name="ac_jackson_desc">jackson 转换示例</string>
     
     <string name="open">打开</string>
     <string name="close">关闭</string>
