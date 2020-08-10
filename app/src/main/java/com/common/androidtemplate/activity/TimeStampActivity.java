@@ -88,7 +88,7 @@ public class TimeStampActivity extends BaseActivity implements Listener<TimeStam
 		if(mTimeStampRequest != null) {
 			mTimeStampRequest.cancel();
 		}	
-		String url = "https://mbank.fjhxbank.com/pmobile/Timestamp.do";
+		String url = "null";
 		mTimeStampRequest = new TimeStampRequest(method, url, params, listenre, errorListener);
 		startRequest(mTimeStampRequest);		
 		
